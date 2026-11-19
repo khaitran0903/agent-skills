@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kiểm chứng độc lập"
+  short_description: "Candidate, evidence, finding và retest độc lập"
+  default_prompt: "Dùng $qc-independent-verification để xử lý nhiệm vụ này theo yêu cầu và cấu hình dự án hiện hành."

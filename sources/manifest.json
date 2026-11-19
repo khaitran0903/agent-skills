@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "captured_on": "2026-11-19",
+  "sources": [
+    {
+      "id": "its",
+      "repository": "https://github.com/khaitt-huit/ITS.git",
+      "commit": "80a4f57de21e4bde3cd33fd5d393773703b7eb3e",
+      "files": [
+        {
+          "source_path": ".agents/skills/its/agents/openai.yaml",
+          "snapshot_path": "sources/its/.agents/skills/its/agents/openai.yaml",
+          "sha256": "c4ea5f6648b8709d9811eca40fee1279785556dc4e2fe2b8bdb19ada60e8cf64",
+          "git_blob_sha256": "c4ea5f6648b8709d9811eca40fee1279785556dc4e2fe2b8bdb19ada60e8cf64",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its/SKILL.md",
+          "sha256": "13bea2f35b47e042773591c5c2aa56633f0a228a0d50c62d6f06876105a1165a",
+          "git_blob_sha256": "13bea2f35b47e042773591c5c2aa56633f0a228a0d50c62d6f06876105a1165a",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-application-security/agents/openai.yaml",
+          "snapshot_path": "sources/its/.agents/skills/its-application-security/agents/openai.yaml",
+          "sha256": "f31033458cd8c63a3a50a83e59197e2955218f857f36682dd7fcb655aa0f22cb",
+          "git_blob_sha256": "f31033458cd8c63a3a50a83e59197e2955218f857f36682dd7fcb655aa0f22cb",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-application-security/references/api-media-and-distributed-state.md",
+          "snapshot_path": "sources/its/.agents/skills/its-application-security/references/api-media-and-distributed-state.md",
+          "sha256": "2b3044b07af4d18850dbea90ea77a0e5fc5b32470a831e7eea4f0fe939abd29c",
+          "git_blob_sha256": "2b3044b07af4d18850dbea90ea77a0e5fc5b32470a831e7eea4f0fe939abd29c",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-application-security/references/dependencies-and-ci.md",
+          "snapshot_path": "sources/its/.agents/skills/its-application-security/references/dependencies-and-ci.md",
+          "sha256": "4635fdff587a4e32c886e9c8f1fc6497becd6915ffc90fa42b9f9b770f1c8f87",
+          "git_blob_sha256": "4635fdff587a4e32c886e9c8f1fc6497becd6915ffc90fa42b9f9b770f1c8f87",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-application-security/references/finding-and-retest.md",
+          "snapshot_path": "sources/its/.agents/skills/its-application-security/references/finding-and-retest.md",
+          "sha256": "a13567aa271876dd3a79a5ccc6f0283274735310782fc4bc85f675e88bb089bc",
+          "git_blob_sha256": "a13567aa271876dd3a79a5ccc6f0283274735310782fc4bc85f675e88bb089bc",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-application-security/references/iam-bff-and-authorization.md",
+          "snapshot_path": "sources/its/.agents/skills/its-application-security/references/iam-bff-and-authorization.md",
+          "sha256": "66c0dbdec945aea23ddfeef1ed120f4ada30741ccd8c37856663390ce8a33de7",
+          "git_blob_sha256": "66c0dbdec945aea23ddfeef1ed120f4ada30741ccd8c37856663390ce8a33de7",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-application-security/references/threat-model-and-review.md",
+          "snapshot_path": "sources/its/.agents/skills/its-application-security/references/threat-model-and-review.md",
+          "sha256": "07d49278053ba655721f83388f5c4330d689a371ae86ef62563e57df090e36d8",
+          "git_blob_sha256": "07d49278053ba655721f83388f5c4330d689a371ae86ef62563e57df090e36d8",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-application-security/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-application-security/SKILL.md",
+          "sha256": "8ff708ae6ca7d7ecb6bb06655b5d4e0854778241e693fca4f7295c364fa24242",
+          "git_blob_sha256": "8ff708ae6ca7d7ecb6bb06655b5d4e0854778241e693fca4f7295c364fa24242",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-delivery-planning/agents/openai.yaml",
+          "snapshot_path": "sources/its/.agents/skills/its-delivery-planning/agents/openai.yaml",
+          "sha256": "31aaaf7daa536270d9cbc1c2c1bdd678fedf99094a8eaf3c335c1197a8074045",
+          "git_blob_sha256": "31aaaf7daa536270d9cbc1c2c1bdd678fedf99094a8eaf3c335c1197a8074045",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-delivery-planning/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-delivery-planning/SKILL.md",
+          "sha256": "95293db87beb4f23ff321cd574fdac1318588d4e1a9bb23eb26d9c9dd3653ff2",
+          "git_blob_sha256": "95293db87beb4f23ff321cd574fdac1318588d4e1a9bb23eb26d9c9dd3653ff2",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-dotnet-clean-architecture/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-dotnet-clean-architecture/SKILL.md",
+          "sha256": "de04ef973c3d93d670f0f53dfd0d140e7d2b1d0fbec426f57e304ee55af5f0e3",
+          "git_blob_sha256": "de04ef973c3d93d670f0f53dfd0d140e7d2b1d0fbec426f57e304ee55af5f0e3",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-employment-business-analysis/agents/openai.yaml",
+          "snapshot_path": "sources/its/.agents/skills/its-employment-business-analysis/agents/openai.yaml",
+          "sha256": "515f913194c617bb64804942f99b9fcd97a51812140dce4789991ac966fae0bd",
+          "git_blob_sha256": "515f913194c617bb64804942f99b9fcd97a51812140dce4789991ac966fae0bd",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-employment-business-analysis/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-employment-business-analysis/SKILL.md",
+          "sha256": "c91bcdb5699394acd462211d222c7fd0b9c5af59e5b88f34d8ad4585b68d95a2",
+          "git_blob_sha256": "c91bcdb5699394acd462211d222c7fd0b9c5af59e5b88f34d8ad4585b68d95a2",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-platform-release/agents/openai.yaml",
+          "snapshot_path": "sources/its/.agents/skills/its-platform-release/agents/openai.yaml",
+          "sha256": "616ad4247a70bd249ccd0da5e0695bfdbb2066c63ca4923e2d7aa6c01d23e4bb",
+          "git_blob_sha256": "616ad4247a70bd249ccd0da5e0695bfdbb2066c63ca4923e2d7aa6c01d23e4bb",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-platform-release/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-platform-release/SKILL.md",
+          "sha256": "55b95b329891413431188d68071eabf947d395369dae67102e3b049fa4b7cea0",
+          "git_blob_sha256": "55b95b329891413431188d68071eabf947d395369dae67102e3b049fa4b7cea0",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-qa-test-design/agents/openai.yaml",
+          "snapshot_path": "sources/its/.agents/skills/its-qa-test-design/agents/openai.yaml",
+          "sha256": "932dd053fc4153be377577a34c3cc8b6df583708bf2747d681a9b5169fafe280",
+          "git_blob_sha256": "932dd053fc4153be377577a34c3cc8b6df583708bf2747d681a9b5169fafe280",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-qa-test-design/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-qa-test-design/SKILL.md",
+          "sha256": "93a8c1931a26b809e4142b4debb577c9a64aa726817025b926148b26bf3650d5",
+          "git_blob_sha256": "93a8c1931a26b809e4142b4debb577c9a64aa726817025b926148b26bf3650d5",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-qc-independent-verification/agents/openai.yaml",
+          "snapshot_path": "sources/its/.agents/skills/its-qc-independent-verification/agents/openai.yaml",
+          "sha256": "fed06270df0bff8f097d77bb125fec777be3a9f4670192d22f4ea3bb401ddf74",
+          "git_blob_sha256": "fed06270df0bff8f097d77bb125fec777be3a9f4670192d22f4ea3bb401ddf74",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-qc-independent-verification/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-qc-independent-verification/SKILL.md",
+          "sha256": "3e6e4781310be4181d94ca8a4cb9d0274b42bfc388c2823cef7d41175066844a",
+          "git_blob_sha256": "3e6e4781310be4181d94ca8a4cb9d0274b42bfc388c2823cef7d41175066844a",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-react-typescript-vite/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-react-typescript-vite/SKILL.md",
+          "sha256": "1c1af4677e8f8362e7984c2725008bc6f891a4be9c2d1356506578cf7e27128b",
+          "git_blob_sha256": "1c1af4677e8f8362e7984c2725008bc6f891a4be9c2d1356506578cf7e27128b",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-survey-data-reporting/agents/openai.yaml",
+          "snapshot_path": "sources/its/.agents/skills/its-survey-data-reporting/agents/openai.yaml",
+          "sha256": "4853203b00e6350530e1bbbb3993d95da57537f14f2afd28e3ebaddf5a46c73f",
+          "git_blob_sha256": "4853203b00e6350530e1bbbb3993d95da57537f14f2afd28e3ebaddf5a46c73f",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-survey-data-reporting/references/metric-specification.md",
+          "snapshot_path": "sources/its/.agents/skills/its-survey-data-reporting/references/metric-specification.md",
+          "sha256": "71e12675cbe3e996d30540e273d38da23fb204d5141c1d2fb446a3f8f43ebf0c",
+          "git_blob_sha256": "71e12675cbe3e996d30540e273d38da23fb204d5141c1d2fb446a3f8f43ebf0c",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-survey-data-reporting/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-survey-data-reporting/SKILL.md",
+          "sha256": "b02ad30b4064af5af641f941677e5003c67b3e0b8141cb1533440e7afe9b4b98",
+          "git_blob_sha256": "b02ad30b4064af5af641f941677e5003c67b3e0b8141cb1533440e7afe9b4b98",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-ui-design-system/agents/openai.yaml",
+          "snapshot_path": "sources/its/.agents/skills/its-ui-design-system/agents/openai.yaml",
+          "sha256": "ac8d07c5d478d469188c6e992fb32eab1a2f2781390b564fec98451e0547ea9a",
+          "git_blob_sha256": "ac8d07c5d478d469188c6e992fb32eab1a2f2781390b564fec98451e0547ea9a",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-ui-design-system/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-ui-design-system/SKILL.md",
+          "sha256": "42009d7b6b1c15d72c8c17d726de145d153226f6f616ecad1e95f451ab0e4fd3",
+          "git_blob_sha256": "42009d7b6b1c15d72c8c17d726de145d153226f6f616ecad1e95f451ab0e4fd3",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-user-documentation/agents/openai.yaml",
+          "snapshot_path": "sources/its/.agents/skills/its-user-documentation/agents/openai.yaml",
+          "sha256": "695a52a3fd7a98e5897ec93ad5cff792fd7661fc41197651df0cabc96d3705a2",
+          "git_blob_sha256": "695a52a3fd7a98e5897ec93ad5cff792fd7661fc41197651df0cabc96d3705a2",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/its-user-documentation/SKILL.md",
+          "snapshot_path": "sources/its/.agents/skills/its-user-documentation/SKILL.md",
+          "sha256": "0fc51890b262436323abd79be0683543f20a241be214adc6fcefcfb10312b1f9",
+          "git_blob_sha256": "0fc51890b262436323abd79be0683543f20a241be214adc6fcefcfb10312b1f9",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".claude/skills/its/SKILL.md",
+          "snapshot_path": "sources/its/.claude/skills/its/SKILL.md",
+          "sha256": "897829345497b9e95a75844fcfa3345b21e8f192b14abd228262e542ae1add08",
+          "git_blob_sha256": "897829345497b9e95a75844fcfa3345b21e8f192b14abd228262e542ae1add08",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": "docs/design/UI_Craft_Checklist.md",
+          "snapshot_path": "sources/its/docs/design/UI_Craft_Checklist.md",
+          "sha256": "f98d4e094dd76e422302d71c34e91600441a0e58e2b1beeeb3c6daaec27866bb",
+          "git_blob_sha256": "f98d4e094dd76e422302d71c34e91600441a0e58e2b1beeeb3c6daaec27866bb",
+          "working_tree_modified": false
+        }
+      ]
+    },
+    {
+      "id": "pbc",
+      "repository": "https://github.com/khaitran0903/PBC.git",
+      "commit": "7d0077eb47c289e81853eb3f2bc7cd6b96bbeddf",
+      "files": [
+        {
+          "source_path": ".agents/skills/pbc/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc/SKILL.md",
+          "sha256": "1616d9f5739ffd25aba03e399b0bc1e4b4ebfc9d311c2f9c1afa44785d9df5f5",
+          "git_blob_sha256": "1616d9f5739ffd25aba03e399b0bc1e4b4ebfc9d311c2f9c1afa44785d9df5f5",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-application-security/agents/openai.yaml",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-application-security/agents/openai.yaml",
+          "sha256": "de567492910023ca53c44a0f6ec0419ab340c5cf94a68c7c66ecf23f87c84d40",
+          "git_blob_sha256": "de567492910023ca53c44a0f6ec0419ab340c5cf94a68c7c66ecf23f87c84d40",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-application-security/references/api-media-and-distributed-state.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-application-security/references/api-media-and-distributed-state.md",
+          "sha256": "9692c2f2f3841eb98268b88302127aacd5e68f03221cc3cd204b9365e7e52bd9",
+          "git_blob_sha256": "9692c2f2f3841eb98268b88302127aacd5e68f03221cc3cd204b9365e7e52bd9",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-application-security/references/dependencies-and-ci.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-application-security/references/dependencies-and-ci.md",
+          "sha256": "850478528b640ef57cdbb4de5dc4a1df721e0ef7e6e27aa40ce7ae91ba7a9b80",
+          "git_blob_sha256": "850478528b640ef57cdbb4de5dc4a1df721e0ef7e6e27aa40ce7ae91ba7a9b80",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-application-security/references/finding-and-retest.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-application-security/references/finding-and-retest.md",
+          "sha256": "5162c5ccb4dd96f072a2fe26910b4ca14c961c1562b051c89bd1ef27862fa1a5",
+          "git_blob_sha256": "5162c5ccb4dd96f072a2fe26910b4ca14c961c1562b051c89bd1ef27862fa1a5",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-application-security/references/iam-bff-and-authorization.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-application-security/references/iam-bff-and-authorization.md",
+          "sha256": "823e8f7f49985707c388f961b013cb5946a724cd42df5cacfd4d9985e14c7f74",
+          "git_blob_sha256": "823e8f7f49985707c388f961b013cb5946a724cd42df5cacfd4d9985e14c7f74",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-application-security/references/threat-model-and-review.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-application-security/references/threat-model-and-review.md",
+          "sha256": "c705834303a6b5778e374246a8e31df2d50105529ba1b37b1653b3b1de9547cc",
+          "git_blob_sha256": "c705834303a6b5778e374246a8e31df2d50105529ba1b37b1653b3b1de9547cc",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-application-security/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-application-security/SKILL.md",
+          "sha256": "be2f13b297c1beeb4b1c32de8e8d501032847359306935ca684f1bbb34e60f41",
+          "git_blob_sha256": "be2f13b297c1beeb4b1c32de8e8d501032847359306935ca684f1bbb34e60f41",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-delivery-planning/agents/openai.yaml",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-delivery-planning/agents/openai.yaml",
+          "sha256": "7ea0285192fac9efc53d8f1ea75817402cea652fbbbdc83bea04008fe0d73cb2",
+          "git_blob_sha256": "7ea0285192fac9efc53d8f1ea75817402cea652fbbbdc83bea04008fe0d73cb2",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-delivery-planning/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-delivery-planning/SKILL.md",
+          "sha256": "063b448b3014760e3798fc1c79fc4a9c0c9405f3a3bd6a06bbaa95117aca5d4a",
+          "git_blob_sha256": "063b448b3014760e3798fc1c79fc4a9c0c9405f3a3bd6a06bbaa95117aca5d4a",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-dotnet-clean-architecture/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-dotnet-clean-architecture/SKILL.md",
+          "sha256": "ce50aab418b29abd20aed45c4124086494532f94c82ac599cb0cea145668855f",
+          "git_blob_sha256": "ce50aab418b29abd20aed45c4124086494532f94c82ac599cb0cea145668855f",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-platform-release/agents/openai.yaml",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-platform-release/agents/openai.yaml",
+          "sha256": "36a5be9183a7f15c4a4773f6d9e757a8358b276f771b6b3c59375ca10cd00e22",
+          "git_blob_sha256": "36a5be9183a7f15c4a4773f6d9e757a8358b276f771b6b3c59375ca10cd00e22",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-platform-release/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-platform-release/SKILL.md",
+          "sha256": "3e8856cac7d8208ab27372d471242a9827a07a59255fccc26777584eef1170b1",
+          "git_blob_sha256": "3e8856cac7d8208ab27372d471242a9827a07a59255fccc26777584eef1170b1",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-qa-test-design/agents/openai.yaml",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-qa-test-design/agents/openai.yaml",
+          "sha256": "9c8b4f7758f2c592784287694f05704a93ac399c29f6dffa9a4633d6ce9b0fc1",
+          "git_blob_sha256": "9c8b4f7758f2c592784287694f05704a93ac399c29f6dffa9a4633d6ce9b0fc1",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-qa-test-design/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-qa-test-design/SKILL.md",
+          "sha256": "ba887cb499c65a283043283cd28ffe956d06464c9f8df916b1178f6d93701b31",
+          "git_blob_sha256": "ba887cb499c65a283043283cd28ffe956d06464c9f8df916b1178f6d93701b31",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-qc-independent-verification/agents/openai.yaml",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-qc-independent-verification/agents/openai.yaml",
+          "sha256": "cab7b783f75446bf989501831e1056bac3e9e1bfce7d91c4ca57b39c587c04d5",
+          "git_blob_sha256": "cab7b783f75446bf989501831e1056bac3e9e1bfce7d91c4ca57b39c587c04d5",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-qc-independent-verification/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-qc-independent-verification/SKILL.md",
+          "sha256": "1a56c7643f7ab69a59673e82484a5e5b428196f330f9b8b37c6ded795d5373f6",
+          "git_blob_sha256": "1a56c7643f7ab69a59673e82484a5e5b428196f330f9b8b37c6ded795d5373f6",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-react-typescript-vite/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-react-typescript-vite/SKILL.md",
+          "sha256": "d3241242ae4fa0c7bda94835b216fb84a9bcfe3dea4fc99f7cf585883c0a27bf",
+          "git_blob_sha256": "d3241242ae4fa0c7bda94835b216fb84a9bcfe3dea4fc99f7cf585883c0a27bf",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-ruflo/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-ruflo/SKILL.md",
+          "sha256": "ceba1201f1ce6253fe772634baad7ff60dd154201e0f98a21a77869ff799719d",
+          "git_blob_sha256": "ceba1201f1ce6253fe772634baad7ff60dd154201e0f98a21a77869ff799719d",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-ui-design-system/agents/openai.yaml",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-ui-design-system/agents/openai.yaml",
+          "sha256": "d9377aaf72d9b923a85be0ca92123534ae63f5dbaa2c3e3f343bccf9b6994f43",
+          "git_blob_sha256": "d9377aaf72d9b923a85be0ca92123534ae63f5dbaa2c3e3f343bccf9b6994f43",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-ui-design-system/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-ui-design-system/SKILL.md",
+          "sha256": "eabfb2834143b30fb90b8b4678371c81e33d722156487cc78d431551dba6a40f",
+          "git_blob_sha256": "eabfb2834143b30fb90b8b4678371c81e33d722156487cc78d431551dba6a40f",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-user-documentation/agents/openai.yaml",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-user-documentation/agents/openai.yaml",
+          "sha256": "906edebd251e759d0af314b9b886dbfb542377b81f82ca57d481616385d07512",
+          "git_blob_sha256": "906edebd251e759d0af314b9b886dbfb542377b81f82ca57d481616385d07512",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": ".agents/skills/pbc-user-documentation/SKILL.md",
+          "snapshot_path": "sources/pbc/.agents/skills/pbc-user-documentation/SKILL.md",
+          "sha256": "018fb6048e00d797c6625486601fedc9397569f982c91a8d685a2006bd6b655c",
+          "git_blob_sha256": "018fb6048e00d797c6625486601fedc9397569f982c91a8d685a2006bd6b655c",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": "docs/development/skill-provenance.md",
+          "snapshot_path": "sources/pbc/docs/development/skill-provenance.md",
+          "sha256": "040d80fb7e628eca8fe8c2327302e13463cbf0902aa4ef3c8bb04c23e92acd96",
+          "git_blob_sha256": "040d80fb7e628eca8fe8c2327302e13463cbf0902aa4ef3c8bb04c23e92acd96",
+          "working_tree_modified": false
+        },
+        {
+          "source_path": "docs/development/skill-source-manifest.json",
+          "snapshot_path": "sources/pbc/docs/development/skill-source-manifest.json",
+          "sha256": "4d45be029c8f948b28216d3b2a7e19608da73d240679e04953be14b2530843dd",
+          "git_blob_sha256": "44c157276992e4c224abb9139f4ce2efafa041c021f6b72dc833e24d54201ebc",
+          "working_tree_modified": false
+        }
+      ]
+    }
+  ]
+}

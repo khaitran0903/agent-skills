@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/khaitran0903/agent-skills.git",
+  "release": "0.1.0",
+  "skills": [
+    {
+      "name": "delivery-planning",
+      "version": "1.0.0",
+      "category": "workflow",
+      "path": "skills/delivery-planning",
+      "source_skills": [
+        "sources/its/.agents/skills/its-delivery-planning/SKILL.md",
+        "sources/pbc/.agents/skills/pbc-delivery-planning/SKILL.md"
+      ]
+    },
+    {
+      "name": "dotnet-clean-architecture",
+      "version": "1.0.0",
+      "category": "technology",
+      "path": "skills/dotnet-clean-architecture",
+      "source_skills": [
+        "sources/its/.agents/skills/its-dotnet-clean-architecture/SKILL.md",
+        "sources/pbc/.agents/skills/pbc-dotnet-clean-architecture/SKILL.md"
+      ]
+    },
+    {
+      "name": "react-typescript-vite",
+      "version": "1.0.0",
+      "category": "technology",
+      "path": "skills/react-typescript-vite",
+      "source_skills": [
+        "sources/its/.agents/skills/its-react-typescript-vite/SKILL.md",
+        "sources/pbc/.agents/skills/pbc-react-typescript-vite/SKILL.md"
+      ]
+    },
+    {
+      "name": "ui-design-system",
+      "version": "1.0.0",
+      "category": "technology",
+      "path": "skills/ui-design-system",
+      "source_skills": [
+        "sources/its/.agents/skills/its-ui-design-system/SKILL.md",
+        "sources/pbc/.agents/skills/pbc-ui-design-system/SKILL.md"
+      ]
+    },
+    {
+      "name": "qa-test-design",
+      "version": "1.0.0",
+      "category": "workflow",
+      "path": "skills/qa-test-design",
+      "source_skills": [
+        "sources/its/.agents/skills/its-qa-test-design/SKILL.md",
+        "sources/pbc/.agents/skills/pbc-qa-test-design/SKILL.md"
+      ]
+    },
+    {
+      "name": "qc-independent-verification",
+      "version": "1.0.0",
+      "category": "workflow",
+      "path": "skills/qc-independent-verification",
+      "source_skills": [
+        "sources/its/.agents/skills/its-qc-independent-verification/SKILL.md",
+        "sources/pbc/.agents/skills/pbc-qc-independent-verification/SKILL.md"
+      ]
+    },
+    {
+      "name": "application-security",
+      "version": "1.0.0",
+      "category": "technology",
+      "path": "skills/application-security",
+      "source_skills": [
+        "sources/its/.agents/skills/its-application-security/SKILL.md",
+        "sources/pbc/.agents/skills/pbc-application-security/SKILL.md"
+      ]
+    },
+    {
+      "name": "platform-release",
+      "version": "1.0.0",
+      "category": "technology",
+      "path": "skills/platform-release",
+      "source_skills": [
+        "sources/its/.agents/skills/its-platform-release/SKILL.md",
+        "sources/pbc/.agents/skills/pbc-platform-release/SKILL.md"
+      ]
+    },
+    {
+      "name": "user-documentation",
+      "version": "1.0.0",
+      "category": "workflow",
+      "path": "skills/user-documentation",
+      "source_skills": [
+        "sources/its/.agents/skills/its-user-documentation/SKILL.md",
+        "sources/pbc/.agents/skills/pbc-user-documentation/SKILL.md"
+      ]
+    }
+  ]
+}

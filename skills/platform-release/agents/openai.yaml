@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nền tảng và phát hành"
+  short_description: "Migration, rollout, restore và rollback có kiểm chứng"
+  default_prompt: "Dùng $platform-release để xử lý nhiệm vụ này theo yêu cầu và cấu hình dự án hiện hành."

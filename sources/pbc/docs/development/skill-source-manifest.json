@@ -1,0 +1,91 @@
+{
+  "source_repository": "ITS",
+  "source_commit": "4480c0b05d2e82e5506dc3f4d2cc0c28553fa239",
+  "imported_on": "2026-11-17",
+  "source_files": [
+    {
+      "path": ".agents/skills/its-delivery-planning/SKILL.md",
+      "sha256": "95293db87beb4f23ff321cd574fdac1318588d4e1a9bb23eb26d9c9dd3653ff2"
+    },
+    {
+      "path": ".agents/skills/its-delivery-planning/agents/openai.yaml",
+      "sha256": "31aaaf7daa536270d9cbc1c2c1bdd678fedf99094a8eaf3c335c1197a8074045"
+    },
+    {
+      "path": ".agents/skills/its-dotnet-clean-architecture/SKILL.md",
+      "sha256": "de04ef973c3d93d670f0f53dfd0d140e7d2b1d0fbec426f57e304ee55af5f0e3"
+    },
+    {
+      "path": ".agents/skills/its-react-typescript-vite/SKILL.md",
+      "sha256": "1c1af4677e8f8362e7984c2725008bc6f891a4be9c2d1356506578cf7e27128b"
+    },
+    {
+      "path": ".agents/skills/its-ui-design-system/SKILL.md",
+      "sha256": "52070289a9947d710d46f3a2b63c59d237361021a2d335dc6c05fe7d43068c29"
+    },
+    {
+      "path": ".agents/skills/its-ui-design-system/agents/openai.yaml",
+      "sha256": "ac8d07c5d478d469188c6e992fb32eab1a2f2781390b564fec98451e0547ea9a"
+    },
+    {
+      "path": ".agents/skills/its-qa-test-design/SKILL.md",
+      "sha256": "2ca2a89146be04cfc86957febbda55009c0a4774193727ccb1781520e2203143"
+    },
+    {
+      "path": ".agents/skills/its-qa-test-design/agents/openai.yaml",
+      "sha256": "932dd053fc4153be377577a34c3cc8b6df583708bf2747d681a9b5169fafe280"
+    },
+    {
+      "path": ".agents/skills/its-qc-independent-verification/SKILL.md",
+      "sha256": "5fcccafc91ad9aebc5ba0f9c6e1701a3ad78e5b5bd452c52550da014fcbdec66"
+    },
+    {
+      "path": ".agents/skills/its-qc-independent-verification/agents/openai.yaml",
+      "sha256": "fed06270df0bff8f097d77bb125fec777be3a9f4670192d22f4ea3bb401ddf74"
+    },
+    {
+      "path": ".agents/skills/its-application-security/SKILL.md",
+      "sha256": "8ff708ae6ca7d7ecb6bb06655b5d4e0854778241e693fca4f7295c364fa24242"
+    },
+    {
+      "path": ".agents/skills/its-application-security/agents/openai.yaml",
+      "sha256": "f31033458cd8c63a3a50a83e59197e2955218f857f36682dd7fcb655aa0f22cb"
+    },
+    {
+      "path": ".agents/skills/its-application-security/references/api-media-and-distributed-state.md",
+      "sha256": "2b3044b07af4d18850dbea90ea77a0e5fc5b32470a831e7eea4f0fe939abd29c"
+    },
+    {
+      "path": ".agents/skills/its-application-security/references/dependencies-and-ci.md",
+      "sha256": "4635fdff587a4e32c886e9c8f1fc6497becd6915ffc90fa42b9f9b770f1c8f87"
+    },
+    {
+      "path": ".agents/skills/its-application-security/references/finding-and-retest.md",
+      "sha256": "a13567aa271876dd3a79a5ccc6f0283274735310782fc4bc85f675e88bb089bc"
+    },
+    {
+      "path": ".agents/skills/its-application-security/references/iam-bff-and-authorization.md",
+      "sha256": "66c0dbdec945aea23ddfeef1ed120f4ada30741ccd8c37856663390ce8a33de7"
+    },
+    {
+      "path": ".agents/skills/its-application-security/references/threat-model-and-review.md",
+      "sha256": "07d49278053ba655721f83388f5c4330d689a371ae86ef62563e57df090e36d8"
+    },
+    {
+      "path": ".agents/skills/its-platform-release/SKILL.md",
+      "sha256": "55b95b329891413431188d68071eabf947d395369dae67102e3b049fa4b7cea0"
+    },
+    {
+      "path": ".agents/skills/its-platform-release/agents/openai.yaml",
+      "sha256": "616ad4247a70bd249ccd0da5e0695bfdbb2066c63ca4923e2d7aa6c01d23e4bb"
+    },
+    {
+      "path": ".agents/skills/its-user-documentation/SKILL.md",
+      "sha256": "0fc51890b262436323abd79be0683543f20a241be214adc6fcefcfb10312b1f9"
+    },
+    {
+      "path": ".agents/skills/its-user-documentation/agents/openai.yaml",
+      "sha256": "695a52a3fd7a98e5897ec93ad5cff792fd7661fc41197651df0cabc96d3705a2"
+    }
+  ]
+}

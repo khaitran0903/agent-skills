@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kế hoạch và bàn giao"
+  short_description: "Lập backlog, xử lý finding và chuẩn bị bàn giao"
+  default_prompt: "Dùng $delivery-planning để xử lý nhiệm vụ này theo yêu cầu và cấu hình dự án hiện hành."

@@ -1,0 +1,3 @@
+interface:
+  display_name: "PBC Điều phối thực hiện"
+  short_description: "Lập kế hoạch, phụ thuộc và bàn giao agent PBC"

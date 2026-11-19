@@ -1,0 +1,3 @@
+interface:
+  display_name: "PBC Nền tảng và phát hành"
+  short_description: "Chuẩn bị môi trường, rollout và rollback PBC"

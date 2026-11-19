@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bảo mật ứng dụng"
+  short_description: "Review trust boundary, quyền và finding có evidence"
+  default_prompt: "Dùng $application-security để xử lý nhiệm vụ này theo yêu cầu và cấu hình dự án hiện hành."

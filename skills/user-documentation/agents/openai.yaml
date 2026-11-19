@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hướng dẫn sử dụng"
+  short_description: "Tài liệu theo vai trò, quyền và build ứng dụng"
+  default_prompt: "Dùng $user-documentation để xử lý nhiệm vụ này theo yêu cầu và cấu hình dự án hiện hành."

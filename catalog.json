@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "https://github.com/khaitran0903/agent-skills.git",
-  "release": "0.1.0",
+  "release": "0.2.0",
   "skills": [
     {
       "name": "delivery-planning",
@@ -15,23 +15,27 @@
     },
     {
       "name": "dotnet-clean-architecture",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "technology",
       "path": "skills/dotnet-clean-architecture",
       "source_skills": [
         "sources/its/.agents/skills/its-dotnet-clean-architecture/SKILL.md",
-        "sources/pbc/.agents/skills/pbc-dotnet-clean-architecture/SKILL.md"
-      ]
+        "sources/pbc/.agents/skills/pbc-dotnet-clean-architecture/SKILL.md",
+        "sources/und/.agents/skills/efcore-dapper-hybrid/SKILL.md"
+      ],
+      "adaptation": "Add EF Core/Dapper reference for connection ownership, atomicity, mapping and retry; retain the consuming project architecture and provider."
     },
     {
       "name": "react-typescript-vite",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "technology",
       "path": "skills/react-typescript-vite",
       "source_skills": [
         "sources/its/.agents/skills/its-react-typescript-vite/SKILL.md",
-        "sources/pbc/.agents/skills/pbc-react-typescript-vite/SKILL.md"
-      ]
+        "sources/pbc/.agents/skills/pbc-react-typescript-vite/SKILL.md",
+        "sources/und/.agents/skills/und-form-ergonomics/SKILL.md"
+      ],
+      "adaptation": "Add conditional form ergonomics reference; preserve IME, delimiter semantics, dirty state and scoped recovery without requiring new storage."
     },
     {
       "name": "ui-design-system",
@@ -55,13 +59,15 @@
     },
     {
       "name": "qc-independent-verification",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "workflow",
       "path": "skills/qc-independent-verification",
       "source_skills": [
         "sources/its/.agents/skills/its-qc-independent-verification/SKILL.md",
-        "sources/pbc/.agents/skills/pbc-qc-independent-verification/SKILL.md"
-      ]
+        "sources/pbc/.agents/skills/pbc-qc-independent-verification/SKILL.md",
+        "sources/und/.agents/skills/und-qa-qc/references/execution-evidence.md"
+      ],
+      "adaptation": "Add isolated runner negative-control workflow covering assertion, fresh failure report and outer process exit; do not import UND retry/DEV policy."
     },
     {
       "name": "application-security",
@@ -92,6 +98,26 @@
         "sources/its/.agents/skills/its-user-documentation/SKILL.md",
         "sources/pbc/.agents/skills/pbc-user-documentation/SKILL.md"
       ]
+    },
+    {
+      "name": "staging-review-ux",
+      "version": "1.0.0",
+      "category": "technology",
+      "path": "skills/staging-review-ux",
+      "source_skills": [
+        "sources/und/.agents/skills/und-staging-review-ux/SKILL.md"
+      ],
+      "adaptation": "Generalize batch review to contract-defined status, selection, revisions and commit policy; remove UND component names and question-bank rules."
+    },
+    {
+      "name": "office-import-export",
+      "version": "1.0.0",
+      "category": "technology",
+      "path": "skills/office-import-export",
+      "source_skills": [
+        "sources/und/.agents/skills/openxml-office-document/SKILL.md"
+      ],
+      "adaptation": "Generalize versioned Office pipeline, provenance, resource controls and external side effects; include synthetic fixtures and preserve project-specific format and commit policy."
     }
   ]
 }

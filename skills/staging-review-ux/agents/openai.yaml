@@ -1,0 +1,4 @@
+interface:
+  display_name: "Staging review"
+  short_description: "Rà lô import, sửa lỗi và phạm vi batch action"
+  default_prompt: "Dùng $staging-review-ux để xử lý giao diện rà lô theo contract và component hiện có."

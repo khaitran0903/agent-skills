@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "template_id": "synthetic-office-v1",
+  "provenance": "Generated synthetic fixtures for agent-skills; no UND business data, macros or executable OLE.",
+  "fixtures": [
+    {
+      "file": "structured.docx",
+      "sha256": "1f08bdb7b7ce78cb8d9663b0514310bfdfeef0ae84773efb2382c6d2fead7376",
+      "expected": {
+        "body_order": [
+          "p",
+          "p",
+          "tbl",
+          "p",
+          "p",
+          "p",
+          "sectPr"
+        ],
+        "text": [
+          "Synthetic Office v1",
+          "Tiếng Việt – dữ liệu hư cấu.",
+          "Outer A",
+          "Outer B",
+          "Nested",
+          "End"
+        ],
+        "nested_table_location": "body/tbl[1]/tr[1]/tc[2]/tbl[1]",
+        "omml_text": "x+1",
+        "media_path": "word/media/pixel.png",
+        "media_sha256": "2e9e614a233d1845c927cdda9175ec8bdf3929c242f4d2ad97a90547bf19974e",
+        "result": "Preserve structured source and locations; unsupported conversion requires a diagnostic, not dropped content."
+      }
+    },
+    {
+      "file": "typed-cells.xlsx",
+      "sha256": "c51227a4266780accaa7aad8be9bfb62bd817bf167d6418f43929a8c376c189e",
+      "expected": {
+        "sheet": "Synthetic",
+        "merged_cells": [
+          "A1:B1"
+        ],
+        "cells": {
+          "A1": {
+            "type": "string",
+            "value": "synthetic-office-v1"
+          },
+          "B2": {
+            "type": "string",
+            "value": "=1+1"
+          },
+          "B3": {
+            "type": "formula",
+            "value": "1+1",
+            "cached_value": null
+          },
+          "B4": {
+            "type": "number",
+            "value": 1.5
+          },
+          "B5": {
+            "type": "string",
+            "value": "Tiếng Việt"
+          }
+        },
+        "result": "Preserve literal text versus intentional formula, decimal and Unicode; do not claim recalculation."
+      }
+    },
+    {
+      "file": "external-link.docx",
+      "sha256": "237285bc53533a129e0a12c95fb008d77ee0edef60f6605b9e5b2d4124b961e1",
+      "expected": {
+        "external_target": "https://fixtures.invalid/never-fetch",
+        "result": "No network fetch; retain diagnostic or inert link under the project policy."
+      }
+    },
+    {
+      "file": "traversal.docx",
+      "sha256": "8116f0bf5eb0dab409c0e301b13ae2ed64d50a34b45efb5d21e6381558be43e0",
+      "expected": {
+        "unsafe_entry": "../outside.txt",
+        "result": "Reject unsafe archive before extraction; no write outside the allowed root."
+      }
+    },
+    {
+      "file": "corrupt.docx",
+      "sha256": "b1d13b863d127361e3dad53bcfe2f680ba23306471fc87c829921cc671ea4960",
+      "expected": {
+        "result": "Fatal parse diagnostic; never empty Success."
+      }
+    }
+  ]
+}

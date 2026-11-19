@@ -32,4 +32,6 @@ Giữ secret ngoài source/image/log. Query parameterized, output được encod
 
 ## Kiểm chứng
 
+Khi dự án dùng cả EF Core và Dapper, đọc [persistence hybrid](references/efcore-dapper-hybrid.md) để giữ ownership connection/transaction, retry và mapping. Không cần thêm Dapper cho dự án chỉ dùng EF Core.
+
 Chọn unit cho invariant, integration trên DB thật phù hợp cho transaction/concurrency, contract cho API/event và smoke cho luồng/quyền bị tác động. Ghi candidate kể cả diff chưa commit, môi trường, lệnh/kết quả, evidence và phần chưa chạy. Finding có hướng xử lý hoặc bước chẩn đoán, owner và điều kiện đóng trước bàn giao.

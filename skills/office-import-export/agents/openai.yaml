@@ -1,0 +1,4 @@
+interface:
+  display_name: "Office import/export"
+  short_description: "Import/export Office có nguồn, giới hạn và staging"
+  default_prompt: "Dùng $office-import-export để xử lý pipeline Word/Excel theo template và phạm vi được giao."

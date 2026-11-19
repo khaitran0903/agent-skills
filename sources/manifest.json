@@ -400,6 +400,51 @@
           "working_tree_modified": true
         }
       ]
+    },
+    {
+      "id": "und",
+      "kind": "workspace",
+      "repository": null,
+      "commit": null,
+      "captured_on": "2026-11-19",
+      "origin": "UND workspace .agents/skills, outside the BE/FE/Media Git repositories; selected files supplied by the project owner.",
+      "files": [
+        {
+          "source_path": ".agents/skills/und-form-ergonomics/SKILL.md",
+          "snapshot_path": "sources/und/.agents/skills/und-form-ergonomics/SKILL.md",
+          "sha256": "53b88ab955826b8e9aa055f591b71ca3129a12a50f3e9476b4a7e3ffe428059b",
+          "git_blob_sha256": null,
+          "working_tree_modified": null
+        },
+        {
+          "source_path": ".agents/skills/und-staging-review-ux/SKILL.md",
+          "snapshot_path": "sources/und/.agents/skills/und-staging-review-ux/SKILL.md",
+          "sha256": "998c8a4efccc86d83f9c795a00d9127ca39df51a450d86ef474c154a75ce4ecf",
+          "git_blob_sha256": null,
+          "working_tree_modified": null
+        },
+        {
+          "source_path": ".agents/skills/openxml-office-document/SKILL.md",
+          "snapshot_path": "sources/und/.agents/skills/openxml-office-document/SKILL.md",
+          "sha256": "ecb2fdcf3d0e045431506f7d09beb453a17d803c8302e627edc56abc3e567c57",
+          "git_blob_sha256": null,
+          "working_tree_modified": null
+        },
+        {
+          "source_path": ".agents/skills/efcore-dapper-hybrid/SKILL.md",
+          "snapshot_path": "sources/und/.agents/skills/efcore-dapper-hybrid/SKILL.md",
+          "sha256": "5b6aec32470e2c192f42dfcf8ae1fec1a725b35d7e9788b3d7f16b19ca9085a1",
+          "git_blob_sha256": null,
+          "working_tree_modified": null
+        },
+        {
+          "source_path": ".agents/skills/und-qa-qc/references/execution-evidence.md",
+          "snapshot_path": "sources/und/.agents/skills/und-qa-qc/references/execution-evidence.md",
+          "sha256": "3bef25ec4690cda82897c77c338f4a7690a876fb50f32121c38284f1461cc849",
+          "git_blob_sha256": null,
+          "working_tree_modified": null
+        }
+      ]
     }
   ]
 }

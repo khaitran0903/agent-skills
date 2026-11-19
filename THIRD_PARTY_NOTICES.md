@@ -1,6 +1,12 @@
 # Nguồn và quyền tái sử dụng
 
-Repo chưa tuyên bố license chung cho phần nội dung ITS/PBC. Việc tập hợp theo yêu cầu chủ dự án không tự xác lập quyền cấp phép lại toàn bộ nguồn hoặc dependency. Chủ dự án có thể bổ sung LICENSE sau khi chốt phạm vi quyền.
+Repo chưa tuyên bố license chung cho phần nội dung ITS/PBC/UND. Việc tập hợp theo yêu cầu chủ dự án không tự xác lập quyền cấp phép lại toàn bộ nguồn hoặc dependency. Chủ dự án có thể bổ sung LICENSE sau khi chốt phạm vi quyền.
+
+## Đóng góp UND
+
+5 file UND được chủ dự án yêu cầu đưa vào kho chung ngày 19/11/2026; snapshot và SHA-256 ở `sources/und/` và manifest. Đây là capture workspace ngoài Git, không nhận là bản phát hành hoặc commit của các repo con UND. Nội dung đã được biên tập độc lập với nghiệp vụ/endpoint/quyền dự án; chưa gán license mới.
+
+Fixtures ở `skills/office-import-export/assets/fixtures/` là dữ liệu tổng hợp tạo cho kho này, gồm XML, ảnh PNG 1×1 và input lỗi; không sao chép tài liệu nghiệp vụ, font, binary MathType/OLE, macro hoặc asset của UND. Các tên thư viện trong skill chỉ là hướng dẫn lựa chọn, không phân phối kèm thư viện/converter hay suy quyền license của chúng.
 
 ## unslop / UI CRAFT
 

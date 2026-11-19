@@ -18,4 +18,6 @@ description: Xây dựng hoặc review frontend React, TypeScript và Vite với
 
 Thiết kế loading, empty, no-results, error/retry, read-only/forbidden, hết phiên, validation và nội dung dài theo màn hình. Label gắn control, focus rõ, hỗ trợ bàn phím và responsive. Không thêm trạng thái nghiệp vụ chỉ vì checklist nêu ví dụ.
 
+Khi làm form nhập liệu nhiều, tag/chip, bàn phím, dirty guard hoặc khôi phục draft, đọc [form ergonomics](references/form-ergonomics.md). Reference giữ IME, ngữ nghĩa delimiter và cô lập draft; không yêu cầu thêm persistent storage chỉ để chỉnh giao diện.
+
 Chạy typecheck riêng nếu build chưa làm; Vite build không mặc nhiên chứng minh typecheck đạt. Lint/build/test theo scripts và tác động. Browser smoke kiểm refresh/deep link, lỗi mạng, quyền/phiên, response trễ, bàn phím, dữ liệu dài và mobile khi liên quan. Ghi rõ static/jsdom/mock/prototype/tích hợp thật, candidate và evidence. Chưa quan sát hành vi thì ghi Not Run.

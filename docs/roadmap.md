@@ -5,7 +5,7 @@
 - Pilot tại một task ITS và một task PBC: chọn planning/UI/QA, so thời gian nhận nâng cấp và số lỗi do tùy chỉnh. Chỉ mở rộng khi có bằng chứng dùng tốt.
 - Chốt license phần tự viết và quyền phân phối tài liệu gốc. Giữ attribution riêng cho nguồn bên thứ ba; không gán một license tùy ý cho toàn bộ snapshot.
 - Phát hành tag và release note sau review; dự án pin commit/tag. Có thể dùng PR nhắc cập nhật, để dự án kiểm và tiếp nhận.
-- Thêm ví dụ profile thứ ba cho dự án mới để kiểm kho chung có thật sự độc lập với ITS/PBC.
+- Profile thứ ba [UND](../profiles/und.md) đã có từ `0.2.0`, cùng 5 phần đóng góp và fixture hư cấu. Tiếp theo pilot một task có scope tại UND để kiểm cách giữ component/contract riêng và xử lý tên skill trùng; chưa ghi nhận pilot ứng dụng.
 
 ## Sau khi có dữ liệu sử dụng
 

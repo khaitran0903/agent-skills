@@ -97,8 +97,17 @@ def validate():
         raise ValueError('Unsupported source manifest')
     recorded = set()
     for source in manifest['sources']:
-        if not re.fullmatch(r'[0-9a-f]{40}', source['commit']):
-            raise ValueError('Invalid source commit')
+        kind = source.get('kind', 'git')
+        if kind == 'git':
+            if not isinstance(source.get('commit'), str) or not re.fullmatch(r'[0-9a-f]{40}', source['commit']):
+                raise ValueError('Invalid source commit')
+        elif kind == 'workspace':
+            if source.get('commit') is not None or source.get('repository') is not None:
+                raise ValueError('Workspace source must not claim a Git commit/repository')
+            if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', source.get('captured_on', '')) or not source.get('origin'):
+                raise ValueError('Workspace source requires capture date and origin')
+        else:
+            raise ValueError(f'Unsupported source kind: {kind}')
         for item in source['files']:
             relative = item['snapshot_path']
             if relative in recorded or relative != f'sources/{source["id"]}/{item["source_path"]}':

@@ -396,8 +396,8 @@
           "source_path": "docs/development/skill-source-manifest.json",
           "snapshot_path": "sources/pbc/docs/development/skill-source-manifest.json",
           "sha256": "4d45be029c8f948b28216d3b2a7e19608da73d240679e04953be14b2530843dd",
-          "git_blob_sha256": "44c157276992e4c224abb9139f4ce2efafa041c021f6b72dc833e24d54201ebc",
-          "working_tree_modified": false
+          "git_blob_sha256": "4d45be029c8f948b28216d3b2a7e19608da73d240679e04953be14b2530843dd",
+          "working_tree_modified": true
         }
       ]
     }

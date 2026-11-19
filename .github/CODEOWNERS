@@ -1,0 +1,15 @@
+# Code Owners — agent-skills
+
+# Mặc định: tất cả thay đổi yêu cầu ít nhất 1 reviewer
+*                               @khaitran0903
+
+# Skill packages: thay đổi catalog và nội dung skill cần review kỹ
+/skills/                        @khaitran0903
+/catalog.json                   @khaitran0903
+
+# Công cụ sync và test: thay đổi ảnh hưởng toàn bộ dự án dùng skill
+/tools/                         @khaitran0903
+/tests/                         @khaitran0903
+
+# Nguồn snapshot: chỉ cập nhật khi capture từ repo gốc, không sửa tay
+/sources/                       @khaitran0903

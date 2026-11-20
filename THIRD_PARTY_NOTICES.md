@@ -8,6 +8,10 @@ Repo chưa tuyên bố license chung cho phần nội dung ITS/PBC/UND. Việc t
 
 Fixtures ở `skills/office-import-export/assets/fixtures/` là dữ liệu tổng hợp tạo cho kho này, gồm XML, ảnh PNG 1×1 và input lỗi; không sao chép tài liệu nghiệp vụ, font, binary MathType/OLE, macro hoặc asset của UND. Các tên thư viện trong skill chỉ là hướng dẫn lựa chọn, không phân phối kèm thư viện/converter hay suy quyền license của chúng.
 
+## Biên tập quy trình — 0.3.0
+
+Chủ dự án yêu cầu chỉ giữ quy trình/quy định chung ngày 20/11/2026. Phần BA/Data được biên tập từ snapshot ITS hiện có; tài liệu điều hướng, KPI/handoff và branching được ghi commit/hash tham khảo trong [source map](docs/source-map.md). Không nhập nguyên tài liệu bổ sung, evaluator, script Git, biểu mẫu hay dataset nghiệp vụ vào package. Lần biên tập này không đổi license hoặc attribution hiện có.
+
 ## unslop / UI CRAFT
 
 - Tác giả phương pháp nguồn: **Damir Sokolovsky**, [@heydamir](https://x.com/heydamir).

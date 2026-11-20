@@ -1,8 +1,18 @@
 {
   "schema_version": 1,
   "repository": "https://github.com/khaitran0903/agent-skills.git",
-  "release": "0.2.0",
+  "release": "0.3.0",
   "skills": [
+    {
+      "name": "requirements-analysis",
+      "version": "1.0.0",
+      "category": "workflow",
+      "path": "skills/requirements-analysis",
+      "source_skills": [
+        "sources/its/.agents/skills/its-employment-business-analysis/SKILL.md"
+      ],
+      "adaptation": "Keep source reconciliation, explicit versus proposed requirements, scoped clarification and acceptance traceability; exclude forms, approval chains, organizational roles and business rules."
+    },
     {
       "name": "delivery-planning",
       "version": "1.0.0",
@@ -27,7 +37,7 @@
     },
     {
       "name": "react-typescript-vite",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "category": "technology",
       "path": "skills/react-typescript-vite",
       "source_skills": [
@@ -35,31 +45,35 @@
         "sources/pbc/.agents/skills/pbc-react-typescript-vite/SKILL.md",
         "sources/und/.agents/skills/und-form-ergonomics/SKILL.md"
       ],
-      "adaptation": "Add conditional form ergonomics reference; preserve IME, delimiter semantics, dirty state and scoped recovery without requiring new storage."
+      "adaptation": "Keep form ergonomics and add conditional navigation state workflow; derive mapping, precedence and lifecycle from the consuming project without new storage or fixed tab policy. Additional source provenance is recorded in docs/source-map.md."
     },
     {
       "name": "ui-design-system",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "technology",
       "path": "skills/ui-design-system",
       "source_skills": [
         "sources/its/.agents/skills/its-ui-design-system/SKILL.md",
         "sources/pbc/.agents/skills/pbc-ui-design-system/SKILL.md"
-      ]
+      ],
+      "adaptation": "Clarify that closing a form or cancelling a wait does not prove rollback of an already dispatched request; preserve the existing CRAFT method."
     },
     {
       "name": "qa-test-design",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "workflow",
       "path": "skills/qa-test-design",
       "source_skills": [
         "sources/its/.agents/skills/its-qa-test-design/SKILL.md",
-        "sources/pbc/.agents/skills/pbc-qa-test-design/SKILL.md"
-      ]
+        "sources/pbc/.agents/skills/pbc-qa-test-design/SKILL.md",
+        "sources/its/.agents/skills/its-survey-data-reporting/SKILL.md",
+        "sources/its/.agents/skills/its-survey-data-reporting/references/metric-specification.md"
+      ],
+      "adaptation": "Add result reconciliation workflow using a project-defined contract, controlled inputs and independent expected results; exclude survey formulas, denominator choices, missing-data rules and domain fixtures."
     },
     {
       "name": "qc-independent-verification",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "category": "workflow",
       "path": "skills/qc-independent-verification",
       "source_skills": [
@@ -67,7 +81,7 @@
         "sources/pbc/.agents/skills/pbc-qc-independent-verification/SKILL.md",
         "sources/und/.agents/skills/und-qa-qc/references/execution-evidence.md"
       ],
-      "adaptation": "Add isolated runner negative-control workflow covering assertion, fresh failure report and outer process exit; do not import UND retry/DEV policy."
+      "adaptation": "Keep runner negative control and add acceptance inventory, scoped evidence reuse and hash limitations; do not import scoring ledgers, KPI thresholds, reviewer authority or role-specific gates. Additional source provenance is recorded in docs/source-map.md."
     },
     {
       "name": "application-security",
@@ -81,13 +95,14 @@
     },
     {
       "name": "platform-release",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "technology",
       "path": "skills/platform-release",
       "source_skills": [
         "sources/its/.agents/skills/its-platform-release/SKILL.md",
         "sources/pbc/.agents/skills/pbc-platform-release/SKILL.md"
-      ]
+      ],
+      "adaptation": "Add conditional Git integration workflow for refs, dirty state, worktree ownership, remote drift and post-push verification; do not prescribe branch topology, release policy or deployment authority. Additional source provenance is recorded in docs/source-map.md."
     },
     {
       "name": "user-documentation",

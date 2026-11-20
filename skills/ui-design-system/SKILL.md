@@ -11,7 +11,7 @@ Khi audit/tinh chỉnh/review, đọc [15 tiêu chí CRAFT](references/ui-craft-
 
 - Dùng shell, token và component chung phù hợp. Nếu thiếu pattern, ghi khoảng trống và giải quyết theo quy trình dự án; không tự áp quy định RFC hoặc đường dẫn component của một dự án khác.
 - Bảng danh mục, ma trận, cây và row detail có semantics khác nhau. Thứ tự cột, toolbar, scope selection/export theo yêu cầu; không ép mặc định thư viện thành quy tắc nghiệp vụ.
-- Form giữ draft độc lập. Hủy chỉ bỏ thay đổi form đó; pending/response trễ không tạo ghi lặp hoặc lưu sau hủy.
+- Form giữ draft độc lập. Hủy chỉ bỏ thay đổi chưa lưu của form đó; callback trễ không ghi đè draft mới hoặc kích hoạt lưu thêm. Nếu request đã gửi, đóng form/hủy chờ không chứng minh server đã hủy hay rollback; đối soát kết quả theo contract.
 - Mô tả loading/empty/no-results/error/retry, quyền/phiên, validation và dữ liệu dài theo phạm vi. Xác nhận thao tác nêu đối tượng và hậu quả thật.
 - Nội dung dùng ngôn ngữ người dùng và giữ thuật ngữ hợp lệ. Không xóa dữ liệu người dùng, tên pháp lý hoặc màu semantic/gradient thương hiệu để đạt một xu hướng thẩm mỹ.
 - Quan sát keyboard/focus, tên truy cập, dialog trap/Escape/return focus khi áp dụng; đo tương phản thực tế. Kiểm responsive/zoom/dữ liệu khó, tránh tràn toàn trang.

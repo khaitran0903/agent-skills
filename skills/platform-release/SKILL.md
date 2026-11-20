@@ -9,6 +9,8 @@ description: Chuẩn bị môi trường, CI, migration, rollout, backup và rol
 
 Giữ cấu hình clone độc lập đường dẫn máy. Secret/key/connection string ngoài source/artifact; tài liệu chỉ ghi tên/reference. Worktree/runtime dùng cơ chế đã được dự án giao, không tự đổi CLI/model hoặc nới quyền khi lỗi đường dẫn.
 
+Khi nhiệm vụ có tích hợp/đồng bộ Git qua nhiều checkout/worktree, đọc [quy trình tích hợp Git](references/git-integration-with-worktrees.md). Giữ quyền và chính sách nhánh đã giao; không coi đồng bộ refs là phát hành sản phẩm.
+
 - Local dùng dữ liệu hư cấu, dịch vụ tối thiểu theo nhu cầu. Tách quyền migration/runtime theo DB; không dùng tài khoản đặc quyền giải quyết mọi lỗi truy cập.
 - CI đọc lockfile, chạy checks theo tác động, quyền workflow tối thiểu; artifact gắn commit/digest và giữ cùng bản đã kiểm cho rollout. Template chưa được CI chạy giữ Not Run.
 - Migration có version, người/job thực thi và cơ chế tránh chạy đồng thời. Mô tả thứ tự schema/API/producer/consumer/FE khi liên quan, tương thích và điều kiện dừng. Không tự DDL production hoặc auto-migrate lúc API start từ một template.

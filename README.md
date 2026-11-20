@@ -1,10 +1,10 @@
 # agent-skills
 
-Kho skill dùng chung được tập hợp từ **ITS**, **PBC** và **UND**, để nâng cấp một nơi và tiếp nhận có kiểm soát ở nhiều dự án. Bản `0.2.0` ngày **19/11/2026** có **11 package**; UND góp 5 phần đã biên tập, gồm 2 package mới và references cho 3 skill hiện có.
+Kho quy trình, phương pháp kiểm chứng và quy định kỹ thuật dùng chung được tập hợp từ **ITS**, **PBC** và **UND**, để nâng cấp một nơi và tiếp nhận có kiểm soát ở nhiều dự án. Bản `0.3.0` ngày **20/11/2026** có **12 package**. Công thức, luồng duyệt và chính sách nghiệp vụ riêng giữ tại dự án sử dụng.
 
 | Thành phần | Mục đích |
 | --- | --- |
-| [`skills/`](skills/) | 11 package có thể cài vào dự án, chia nhóm qua catalog |
+| [`skills/`](skills/) | 12 package có thể cài vào dự án, chia nhóm qua catalog |
 | [`catalog.json`](catalog.json) | Version, nhóm và nguồn của từng package |
 | [`profiles/`](profiles/) | Ranh giới tùy chỉnh riêng ITS/PBC/UND và mẫu cho dự án mới |
 | [`sources/`](sources/README.md) | Snapshot nguyên bản, commit hoặc capture workspace, hash và provenance |
@@ -15,19 +15,20 @@ Kho skill dùng chung được tập hợp từ **ITS**, **PBC** và **UND**, đ
 
 | Nhóm | Skill | Dùng khi |
 | --- | --- | --- |
+| Quy trình | [requirements-analysis](skills/requirements-analysis/SKILL.md) | Làm rõ nguồn, điểm mâu thuẫn, yêu cầu và acceptance |
 | Quy trình | [delivery-planning](skills/delivery-planning/SKILL.md) | Kế hoạch, backlog, finding và bàn giao |
-| Quy trình | [qa-test-design](skills/qa-test-design/SKILL.md) | Test plan, dữ liệu và expected độc lập |
+| Quy trình | [qa-test-design](skills/qa-test-design/SKILL.md) | Test plan, expected độc lập và đối soát kết quả theo contract |
 | Quy trình | [qc-independent-verification](skills/qc-independent-verification/SKILL.md) | Kiểm chứng candidate, retest, evidence và độ tin cậy runner |
 | Quy trình | [user-documentation](skills/user-documentation/SKILL.md) | Hướng dẫn theo vai trò và phiên bản |
 | Công nghệ | [dotnet-clean-architecture](skills/dotnet-clean-architecture/SKILL.md) | Backend .NET, ranh giới lớp và EF Core/Dapper |
-| Công nghệ | [react-typescript-vite](skills/react-typescript-vite/SKILL.md) | Frontend, contract, state và form ergonomics |
+| Công nghệ | [react-typescript-vite](skills/react-typescript-vite/SKILL.md) | Frontend, contract, điều hướng/state và form ergonomics |
 | Công nghệ | [staging-review-ux](skills/staging-review-ux/SKILL.md) | Rà lô import, tái kiểm, selection và batch action |
 | Công nghệ | [office-import-export](skills/office-import-export/SKILL.md) | Pipeline Word/Excel, fidelity, giới hạn và staging |
 | Công nghệ | [ui-design-system](skills/ui-design-system/SKILL.md) | UI, component và 15 tiêu chí CRAFT |
 | Công nghệ | [application-security](skills/application-security/SKILL.md) | Review bảo mật ứng dụng theo scope |
-| Công nghệ | [platform-release](skills/platform-release/SKILL.md) | Môi trường, migration, CI và khôi phục |
+| Công nghệ | [platform-release](skills/platform-release/SKILL.md) | Môi trường, tích hợp Git, migration, CI và khôi phục |
 
-Skill nghiệp vụ Việc làm/khảo sát, router `its`/`pbc` và `pbc-ruflo` được giữ đầy đủ trong snapshot. Chúng cần tài liệu/runtime dự án gốc, nên chưa được đóng gói thành skill độc lập. Xem [bản đồ nguồn](docs/source-map.md).
+Skill nghiệp vụ và router dự án được giữ trong snapshot lịch sử để truy vết; snapshot không được cài như skill chung. Phần phương pháp phân tích/đối soát đã được chọn lọc ở `0.3.0`; các biểu mẫu, công thức và ca nghiệp vụ tiếp tục thuộc dự án gốc. Xem [bản đồ nguồn](docs/source-map.md).
 
 Đóng góp UND giữ các luật khảo thí, component, endpoint, quyền DEV và quyết định STT-01 ở [profile UND](profiles/und.md). Package Office có [fixture hư cấu và expected](skills/office-import-export/references/fixture-contract.md); tình huống thử của các phần khác nằm trong reference/skill tương ứng. Đây là dữ liệu và tiêu chí thử, không phải kết quả pilot tại dự án.
 

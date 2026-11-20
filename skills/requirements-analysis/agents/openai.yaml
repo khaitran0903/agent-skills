@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phân tích yêu cầu"
+  short_description: "Nguồn, điểm chưa rõ và tiêu chí nghiệm thu"
+  default_prompt: "Dùng $requirements-analysis để làm rõ yêu cầu và tiêu chí nghiệm thu từ nguồn được giao."

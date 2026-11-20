@@ -10,7 +10,7 @@
 ## Sau khi có dữ liệu sử dụng
 
 - Bộ tình huống đánh giá hành vi: chọn đúng skill, chỉ đọc reference cần thiết, giữ phạm vi, không tự chọn CLI hay làm sai oracle. Ghi candidate/model/công cụ và giới hạn; không chỉ chấm câu trả lời chứa từ khóa.
-- Tách package chuyên ngành khảo sát/báo cáo và công/lương khi có nhiều dự án cần. Mỗi package có dữ liệu hư cấu, metric/invariant và dependency rõ; không tổng quát hóa mọi nghiệp vụ ngay từ đầu.
+- Chỉ tách thêm skill khi có trigger/đầu ra chung độc lập và lợi ích so với bổ sung skill hiện có. Nghiệp vụ chuyên ngành tiếp tục ở dự án, không nằm trong lộ trình kho chung. `0.3.0` giữ phương pháp đối soát trong QA và bổ sung quy trình phân tích yêu cầu riêng.
 - Đóng gói điều phối nhiều CLI thành bộ riêng gồm schema/launcher/preflight đã kiểm chứng, không chỉ chép router `SKILL.md`.
 - Công cụ xem diff ba chiều và báo dự án nào đang dùng commit cũ. Mọi cập nhật vẫn qua review, giữ phần riêng và không gửi source lên dịch vụ ngoài mặc định.
 - Gắn owner, ngày review gần nhất và kết quả pilot cho từng skill; loại quy tắc trùng/lỗi thời thay vì chỉ cộng thêm checklist.

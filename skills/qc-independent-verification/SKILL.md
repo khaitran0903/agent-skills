@@ -23,7 +23,11 @@ Khi sửa runner, wrapper hoặc đường ghi report/exit, đọc [độ tin c�
 
 ## Kết quả và retest
 
+Đối chiếu danh sách acceptance/checks cần đánh giá với kết quả được giao, gồm phần thiếu hoặc chưa chạy. Không bỏ check vì Failed/Not Run, tự đổi tiêu chí hoặc thêm hệ thống điểm/KPI để kết luận đạt; thay phạm vi cần ghi căn cứ và phiên bản tương ứng. Kiểm bắt buộc, ngoại lệ và quyết định tiếp nhận theo policy/task của dự án, không suy từ một điểm tổng.
+
 Mỗi gate/ca ghi expected, actual, verdict, lệnh/exit hoặc bước UI, evidence và giới hạn. `Passed` cần quan sát đạt; `Failed` có sai lệch; `Not Run` khi chưa kiểm. `Not Applicable` cần lý do cụ thể; không che gate bắt buộc còn thiếu.
+
+Evidence phải khớp phạm vi và bản đã kiểm. Nếu dùng lại evidence cho phần không đổi, ghi candidate gốc và căn cứ áp dụng sau khi đánh giá delta; không nhận là đã chạy lại trên candidate mới. Hash khớp bytes không chứng minh nội dung evidence đúng hoặc quyết định phê duyệt hợp lệ.
 
 Finding có bản tái hiện, bước/dataset, tác động, expected/actual, evidence, owner, nguyên nhân đã xác minh/giả thuyết/chưa biết, hướng sửa hoặc bước chẩn đoán và điều kiện đóng. QC khuyến nghị, không tự sửa source/fixture để đóng lỗi ngoài phạm vi sửa đã được giao.
 

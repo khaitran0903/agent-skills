@@ -23,4 +23,6 @@ Mỗi ca có ID, nguồn/rủi ro, lớp kiểm, tiền điều kiện, actor/sc
 
 Dữ liệu hư cấu/ẩn danh giữ đặc điểm cần kiểm; đồng hồ/ngày kiểm soát được. Expected tính tay hoặc bằng công cụ độc lập, không gọi lại hàm đang kiểm. Không đổi expected để hợp thức hóa lỗi.
 
+Khi cần so kết quả giữa query/API, UI, báo cáo hoặc file xuất, đọc [quy trình đối soát](references/result-reconciliation.md). Định nghĩa và quy tắc tính lấy từ dự án; reference chỉ hướng dẫn chuẩn bị căn cứ và kiểm kết quả.
+
 Bàn giao test plan/dataset/expected và phần thiếu. `Passed` chỉ khi thực chạy đáp ứng expected; `Failed` có sai lệch; `Not Run` khi chưa chạy hoặc bị chặn. Ghi rõ mock/prototype/static/runtime. Ca mới thiết kế giữ Not Run; coverage không chỉ là số test. Finding thiếu oracle/coverage cần hành động hoặc bước làm rõ, owner và điều kiện đóng.

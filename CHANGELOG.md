@@ -1,5 +1,14 @@
 # Thay đổi
 
+## 0.3.0 — 2026-11-20
+
+- Chốt phạm vi chỉ gồm quy trình, phương pháp kiểm chứng và quy định kỹ thuật dùng chung; nghiệp vụ riêng và ca minh họa nghiệp vụ giữ tại dự án. Không thêm package Data, ledger/KPI, evaluator hay script Git từ ITS.
+- Thêm `requirements-analysis` `1.0.0`: đối chiếu nguồn, phân biệt yêu cầu/diễn giải/đề xuất, xử lý mâu thuẫn và truy vết acceptance theo phạm vi.
+- Nâng `qa-test-design` lên `1.1.0` với reference đối soát kết quả; `react-typescript-vite` lên `1.2.0` với reference state khi điều hướng; `platform-release` lên `1.1.0` với reference tích hợp Git qua worktrees.
+- Nâng `qc-independent-verification` lên `1.2.0`: đối chiếu danh sách acceptance/checks, kiểm phạm vi evidence dùng lại và giới hạn hash, theo policy của dự án.
+- Sửa diễn đạt hủy form trong `ui-design-system` `1.0.1`: hủy chờ/đóng form không chứng minh rollback request đã gửi.
+- References nằm trong từng package, không tạo dependency tới package khác. Giữ nguyên 60 file snapshot, manifest, định dạng lock và công cụ sync; ghi nguồn tham khảo bổ sung cùng phần giữ/bỏ trong source map.
+
 ## 0.2.0 — 2026-11-19
 
 - Tiếp nhận 5 file skill/reference UND dưới dạng snapshot workspace nguyên byte, SHA-256 và provenance không có Git commit; giữ 55 file ITS/PBC đã chụp.

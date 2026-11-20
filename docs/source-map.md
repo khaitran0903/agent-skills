@@ -1,6 +1,6 @@
 # Bản đồ nguồn và phần biên tập
 
-Các file gốc và hash được liệt kê đầy đủ trong [manifest](../sources/manifest.json). Tên `ITS/PBC/UND` dưới đây chỉ nguồn nội dung, không làm scope thực thi của skill chung.
+Các file chụp nguyên bản và hash được liệt kê đầy đủ trong [manifest](../sources/manifest.json). Nguồn chỉ tham khảo để biên tập được ghi riêng bên dưới. Tên `ITS/PBC/UND` chỉ nguồn nội dung, không làm scope thực thi của skill chung.
 
 | Skill dùng chung | Nguồn chính trong `.agents/skills/` của cả ITS/PBC | Điều chỉnh |
 | --- | --- | --- |
@@ -34,3 +34,29 @@ không có commit nguồn. Không dùng HEAD BE/FE/Media để gắn lịch sử
 Tên hook/component, endpoint, ngưỡng duplicate, quyền DEV, test IDs và quyết định
 STT-01 giữ tại UND; [profile](../profiles/und.md) ghi ranh giới và xung đột tên khi
 tiếp nhận. Tình huống expected trong package chưa phải evidence pilot tại UND.
+
+## Quy trình dùng chung — 0.3.0
+
+Theo phạm vi chủ dự án chốt ngày 20/11/2026, chỉ giữ quy trình, phương pháp kiểm chứng và quy định kỹ thuật chung. Không đóng gói nghiệp vụ, kể cả ví dụ khảo sát đã đổi tên thành dữ liệu hư cấu. Không tạo package Data hoặc cơ chế ledger/KPI mới.
+
+| Package và version | Nguồn và phần giữ | Phần bỏ hoặc giữ tại dự án |
+| --- | --- | --- |
+| requirements-analysis 1.0.0 | [BA nguồn](../sources/its/.agents/skills/its-employment-business-analysis/SKILL.md): vị trí nguồn, đối chiếu mâu thuẫn, làm rõ theo scope và truy vết acceptance | Biểu mẫu, actor/chức danh cố định, luồng duyệt, trường/điều kiện nghiệp vụ và cơ chế PM của ITS |
+| qa-test-design 1.1.0 | [Data nguồn](../sources/its/.agents/skills/its-survey-data-reporting/SKILL.md) và [metric reference](../sources/its/.agents/skills/its-survey-data-reporting/references/metric-specification.md): căn cứ cùng dữ liệu/scope, expected độc lập, lần theo sai lệch | Công thức, lựa chọn mẫu số, quy tắc missing/dedup, khoảng/đa lựa chọn và dataset khảo sát |
+| react-typescript-vite 1.2.0 | Nguồn điều hướng bổ sung ở bảng dưới: xác định contract state, mapping, vòng đời và kiểm trước khi query | Thứ tự ưu tiên state, UX/GRID, route, store và cách chia sẻ tab cố định của ITS |
+| qc-independent-verification 1.2.0 | Nguồn KPI/handoff bổ sung: inventory checks, binding evidence, giữ kết quả thiếu và giới hạn hash | Điểm/trọng số, ngưỡng KPI, ledger vai trò, evaluator, quyền phê duyệt và số vòng retry |
+| platform-release 1.1.0 | Nguồn branching/handoff bổ sung: nhận diện worktree/ref, bảo toàn thay đổi, kiểm remote drift và hậu kiểm | Topology nhánh, prefix theo vai trò, đường dẫn, script, launcher và chính sách release ITS |
+| ui-design-system 1.0.1 | Đối chiếu quy tắc xử lý kết quả chưa rõ đã có trong staging review và form ergonomics | Không thay chính sách hủy ở server; chỉ làm rõ hủy UI không chứng minh rollback |
+
+BA/Data và metric reference đã có trong snapshot ITS commit `80a4f57de21e4bde3cd33fd5d393773703b7eb3e`; bytes còn khớp khi đối chiếu ITS commit mới bên dưới. Giữ nguyên commit và hash lịch sử trong manifest.
+
+Các tài liệu bổ sung chỉ dùng để chọn phương pháp; không sao chép nguyên bản vào snapshot hoặc package. Nguồn: repository `https://github.com/khaitt-huit/ITS`, commit `18391ce2c01065abc44d5049a434c616778c939c`, đối chiếu ngày 20/11/2026:
+
+| Đường dẫn nguồn tại commit trên | SHA-256 bytes đã đọc |
+| --- | --- |
+| [docs/architecture/Frontend_Search_Context.md](https://github.com/khaitt-huit/ITS/blob/18391ce2c01065abc44d5049a434c616778c939c/docs/architecture/Frontend_Search_Context.md) | `cee2668a64b0b3b474cd405f19ca0865bd7bd82a2b73ed8cecf8ec14c23bf2eb` |
+| [docs/development/role-kpi.md](https://github.com/khaitt-huit/ITS/blob/18391ce2c01065abc44d5049a434c616778c939c/docs/development/role-kpi.md) | `8a45e91cf9b82b3b5c3cfef3e7516a96b1a5e34d275bc7c819e629bef734d2b1` |
+| [docs/development/agent-cli-handoff.md](https://github.com/khaitt-huit/ITS/blob/18391ce2c01065abc44d5049a434c616778c939c/docs/development/agent-cli-handoff.md) | `baa9f65fbf3dae0ac1272e5b138c590c94a33b22fffd2537584f594ec663e0d5` |
+| [docs/development/branching.md](https://github.com/khaitt-huit/ITS/blob/18391ce2c01065abc44d5049a434c616778c939c/docs/development/branching.md) | `90658690f975291f3c22a541d00d1903b5d44b7f2224c4ca41c8654839077d16` |
+
+Không nhập evaluator/tests governance hoặc báo cáo Git của task thật. References mới mô tả quy trình trung tính, không nhận kết quả thực nghiệm của ITS làm evidence cho package chung. Quyền và attribution tiếp tục theo [notices](../THIRD_PARTY_NOTICES.md).

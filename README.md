@@ -1,5 +1,7 @@
 # agent-skills
 
+[![release](https://img.shields.io/badge/release-0.3.0-blue)](CHANGELOG.md) [![skills](https://img.shields.io/badge/skills-12-green)](catalog.json) [![CI](https://github.com/khaitran0903/agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/khaitran0903/agent-skills/actions/workflows/validate.yml) [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](tools/skills.py)
+
 Kho quy trình, phương pháp kiểm chứng và quy định kỹ thuật dùng chung được tập hợp từ **ITS**, **PBC** và **UND**, để nâng cấp một nơi và tiếp nhận có kiểm soát ở nhiều dự án. Bản `0.3.0` ngày **20/11/2026** có **12 package**. Công thức, luồng duyệt và chính sách nghiệp vụ riêng giữ tại dự án sử dụng.
 
 | Thành phần | Mục đích |
@@ -10,6 +12,40 @@ Kho quy trình, phương pháp kiểm chứng và quy định kỹ thuật dùng
 | [`sources/`](sources/README.md) | Snapshot nguyên bản, commit hoặc capture workspace, hash và provenance |
 | [`tools/skills.py`](tools/skills.py) | Liệt kê, kiểm tra và cài/cập nhật có phát hiện chỉnh sửa cục bộ |
 | [`docs/update-workflow.md`](docs/update-workflow.md) | Quy trình nhận nâng cấp, xử lý xung đột và rollback |
+
+## Cấu trúc thư mục
+
+```
+agent-skills/
+├── skills/                          # 12 package cài được vào dự án
+│   ├── requirements-analysis/       │   ├── SKILL.md
+│   ├── delivery-planning/           │   ├── agents/
+│   ├── qa-test-design/              │   └── references/
+│   ├── qc-independent-verification/ │
+│   ├── user-documentation/          │
+│   ├── dotnet-clean-architecture/   │
+│   ├── react-typescript-vite/       │
+│   ├── staging-review-ux/           │
+│   ├── office-import-export/        │
+│   ├── ui-design-system/            │
+│   ├── application-security/        │
+│   └── platform-release/            │
+├── catalog.json                     # Version, nhóm, nguồn từng package
+├── profiles/                        # Ranh giới ITS / PBC / UND + mẫu dự án mới
+│   ├── its.md
+│   ├── pbc.md
+│   ├── und.md
+│   └── project-template.md
+├── sources/                         # Snapshot nguyên bản (không cài trực tiếp)
+│   ├── its/
+│   ├── pbc/
+│   └── und/
+├── docs/                            # update-workflow, source-map, roadmap
+├── tools/
+│   └── skills.py                    # CLI: list / validate / sync
+├── tests/                           # Unit test cho tools/skills.py
+└── .github/workflows/validate.yml   # CI: validate + unittest trên Ubuntu & Windows
+```
 
 ## Bộ dùng chung
 
@@ -48,6 +84,32 @@ python tools/skills.py sync --project D:\PROJECT\MyApp --skill delivery-planning
 python tools/skills.py sync --project D:\PROJECT\MyApp --skill delivery-planning --skill ui-design-system --apply
 ```
 
+**Ví dụ output sync (xem trước — dry run):**
+```
+```
+\$ python tools/skills.py sync --project <duong-dan-du-an> --skill delivery-planning --skill ui-design-system
+```
+[DRY RUN] 2 skill(s) selected: delivery-planning, ui-design-system
+```
+  delivery-planning   v1.0.0  -> install  (not present)
+  ui-design-system    v1.0.1  -> install  (not present)
+```
+No files written. Run with --apply to install.
+`
+```
+**Sau khi thêm --apply:**
+```
+`
+\$ python tools/skills.py sync --project <duong-dan-du-an> --skill delivery-planning --skill ui-design-system --apply
+```
+  delivery-planning   v1.0.0  OK installed  (3 files)
+  ui-design-system    v1.0.1  OK installed  (4 files)
+```
+Lock written: <duong-dan-du-an>/.agents/agent-skills.lock.json
+Commit lock together with your project changes.
+`
+```
+```
 Skill được cài vào `<project>/.agents/skills/<name>/`. Lock tại `.agents/agent-skills.lock.json` ghi repository, commit nguồn, version và hash file đã nhận. Commit lock cùng thay đổi dự án. Không chạy hai phiên sync cùng dự án đồng thời.
 
 Khi đã có lock, chạy `sync --project <path>` để xem nâng cấp cho các skill đang quản lý; thêm `--apply` sau khi xem diff. Công cụ từ chối ghi khi phát hiện file đã sửa/xóa/thêm cục bộ, thư mục trùng chưa thuộc lock, hoặc lock không hợp lệ. Không có tùy chọn ép ghi đè. [Quy trình cập nhật](docs/update-workflow.md) hướng dẫn nhận thay đổi bằng review thủ công khi cần.

@@ -20,3 +20,15 @@ Giữ tài liệu ở vị trí/mục lục theo dự án. Không đặt lệnh 
 Tác giả tự đối chiếu; khi được giao kiểm chứng, làm lại bước trên đúng build/vai trò. Nếu yêu cầu QC độc lập, chuyển candidate/evidence cho người/phiên khác. `Passed` cần quan sát đạt, `Failed` có sai lệch, `Not Run` khi chưa thực hiện; đọc source/ảnh không thay walkthrough. Build đổi luồng/quyền cần kiểm lại phần tác động.
 
 Bàn giao file, nguồn, build, ảnh/evidence, kết quả thực chạy và quyết định còn chờ. Xuất Word/PDF khi được yêu cầu, dùng công cụ/skill định dạng phù hợp và kiểm layout; file Markdown chưa chứng minh bản xuất đẹp hoặc luồng thật đã đúng.
+
+## Tình huống thử
+
+| Trigger/dữ liệu hư cấu | Expected |
+| --- | --- |
+| Tài liệu mô tả luồng duyệt 3 bước; ứng dụng đã rút còn 2 bước sau bản cập nhật gần nhất | Phát hiện lệch, ghi Draft, gắn build thực tế và chờ xác nhận trước khi cập nhật |
+| Ảnh chụp màn hình nút "Gửi yêu cầu" lấy từ bản demo; bản production dùng nhãn "Trình duyệt" | Ghi chú ảnh lấy từ build nào; không dùng ảnh demo làm minh chứng bản chính thức |
+| Walkthrough viết từ đặc tả; tác giả chưa chạy thật trên môi trường staging | Đánh dấu từng bước là Draft, ghi rõ nguồn đặc tả và phần chưa xác minh bằng runtime |
+| Hướng dẫn không có nhánh lỗi khi người dùng nhập sai mã xác nhận | Bổ sung nhánh lỗi có thông báo hệ thống và hướng xử lý; không để luồng kết thúc không rõ |
+| Tài liệu ghi quyền "Quản trị viên" cho bước xuất báo cáo; thực tế vai trò "Kế toán" cũng có quyền đó | Đối chiếu ma trận quyền, ghi đúng vai trò được phép; không tự mở rộng hoặc thu hẹp phạm vi |
+
+Ghi build, vai trò và môi trường đã dùng khi soạn hoặc kiểm chứng từng bước; phần chưa chạy thật trên đúng build/vai trò cần đánh dấu rõ để tránh nhận nhầm là đã xác minh.

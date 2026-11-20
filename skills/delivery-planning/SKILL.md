@@ -26,3 +26,15 @@ Hành động cải tiến được chọn cần owner, mốc kiểm, reviewer v
 ## Đầu ra
 
 Trả backlog theo phụ thuộc, tiêu chí Ready/Done tương xứng nhiệm vụ, quyết định chờ, rủi ro, checkpoint và điều kiện bàn giao/UAT/rollback khi áp dụng. Ghi rõ kế hoạch nào chưa triển khai hoặc chưa kiểm thử; một plan hoàn chỉnh không chứng minh ứng dụng đã chạy.
+
+## Tình huống thử
+
+| Trigger/dữ liệu hư cấu | Expected |
+| --- | --- |
+| Task "cấu hình môi trường staging" trong backlog không có owner sau khi phân rã | Gắn owner hoặc escalate trước khi chốt sprint; không để task trôi không người nhận |
+| Finding "luồng duyệt bỏ qua bước xác nhận" thiếu bước tái hiện và log thực tế | Giữ finding ở trạng thái chờ evidence; không giao sửa khi chưa có actual và bước tái hiện rõ |
+| Task B phụ thuộc Task A, Task A lại chờ output của Task B | Phát hiện vòng phụ thuộc và nêu rõ; không xếp lịch cả hai cho đến khi vòng được phá |
+| Deadline bàn giao dời sớm 3 ngày sau khi backlog đã chốt và owner đã nhận việc | Rà lại acceptance và scope; nêu task nào cần điều chỉnh, không tự thu hẹp scope mà không thông báo |
+| Acceptance criteria "hệ thống phản hồi nhanh" không có ngưỡng đo cụ thể | Yêu cầu làm rõ tiêu chí đo lường trước khi thiết kế test; không tự áp ngưỡng giả định vào expected |
+
+Ghi actual cùng công cụ, môi trường và phiên đã dùng khi chạy thử; chưa kiểm với dữ liệu và luồng thật thì không kết luận kế hoạch đủ điều kiện bàn giao.

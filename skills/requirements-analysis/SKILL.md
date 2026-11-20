@@ -26,3 +26,15 @@ Quy tắc nghiệp vụ lấy từ nguồn và quyết định của dự án. V
 - Khi nguồn thay đổi, xác định yêu cầu/acceptance bị tác động và giữ dấu phiên bản hoặc quyết định cũ cần truy vết. Không âm thầm sửa nghĩa để khớp implementation.
 
 Bàn giao yêu cầu đã làm rõ, nguồn, acceptance, điểm mâu thuẫn và quyết định còn thiếu trong định dạng dự án sử dụng. Việc xác nhận nghĩa, duyệt thiết kế hoặc kiểm chứng độc lập theo phạm vi và quyền đã giao; tài liệu phân tích không chứng minh các bước đó đã hoàn thành. Không bắt mọi nhiệm vụ phải qua thêm một vòng BA trước khi được thực hiện.
+
+## Tình huống thử
+
+| Trigger/dữ liệu hư cấu | Expected |
+| --- | --- |
+| Hai tài liệu nguồn ghi điều kiện kích hoạt khác nhau cho cùng một trạng thái (v1.2 ghi "số lượng ≥ 1", v2.0 ghi "số lượng > 0") | Chỉ ra xung đột và phiên bản áp dụng; không tự chọn một bên mà không có quyết định được ghi nhận |
+| Acceptance criteria chỉ ghi "hệ thống phản hồi nhanh" mà không có ngưỡng đo lường | Đánh dấu thiếu điều kiện kiểm thử; ghi câu hỏi mở và owner xác nhận, không tự đặt ngưỡng |
+| Yêu cầu ghi "tùy theo vai trò" nhưng nguồn không liệt kê vai trò nào | Ghi là chưa xác minh; không tự suy danh sách vai trò từ ví dụ hoặc thói quen hệ thống tương tự |
+| Tài liệu v3 mới hơn không đề cập một quy tắc có trong v1; không có biên bản bãi bỏ | Giữ quy tắc v1 với nhãn chưa xác nhận; ghi câu hỏi cần chủ sở hữu xác nhận có còn hiệu lực không |
+| Nguồn không ghi trạng thái "bị khóa", nhưng quy trình xử lý đề cập đến nó một lần | Ghi là xuất hiện trong nguồn nhưng chưa được định nghĩa; không tự mở rộng thành trạng thái chính thức trong mô hình |
+
+Ghi phiên bản và vị trí nguồn cho mọi yêu cầu được truy vết; phần chưa xác nhận cần ghi rõ câu hỏi còn mở và owner có thể xác nhận nếu biết.

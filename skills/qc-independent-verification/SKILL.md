@@ -32,3 +32,15 @@ Evidence phải khớp phạm vi và bản đã kiểm. Nếu dùng lại eviden
 Finding có bản tái hiện, bước/dataset, tác động, expected/actual, evidence, owner, nguyên nhân đã xác minh/giả thuyết/chưa biết, hướng sửa hoặc bước chẩn đoán và điều kiện đóng. QC khuyến nghị, không tự sửa source/fixture để đóng lỗi ngoài phạm vi sửa đã được giao.
 
 Trước retest đối chiếu delta/evidence mới với điều kiện còn thiếu. Chạy trên bản sửa định danh và regression theo tác động; giữ lịch sử Failed. Lỗi runner/quyền/môi trường ghi đúng nguyên nhân và phần Not Run, không tắt kiểm soát để chuyển verdict. Kết luận tiếp nhận kỹ thuật giữ giới hạn; UAT và phát hành theo quyền dự án.
+
+## Tình huống thử
+
+| Trigger/dữ liệu hư cấu | Expected |
+| --- | --- |
+| Candidate có diff chưa commit khi QC nhận; SHA HEAD khớp yêu cầu nhưng working tree khác | Ghi SHA và Git status thực tế; không xác nhận candidate đến khi diff được commit hoặc revert |
+| Evidence từ build cũ được tái dùng nguyên xi cho build mới không có delta | Ghi candidate gốc và căn cứ áp dụng; không nhận là đã chạy lại trên candidate mới |
+| Verdict Passed nhưng toàn bộ assertions chạy trên mock/jsdom, không phải runtime thật | Ghi nhãn môi trường là mock; không nâng lên Passed cho hành vi runtime chưa được kiểm |
+| Sửa lỗi M nhưng regression bỏ sót ca liên quan; retest chỉ chạy lại ca M | Chạy regression theo tác động của thay đổi; ghi Not Run cho ca chưa được kiểm |
+| QC sửa fixture để giá trị actual khớp expected thay vì báo lỗi sản phẩm | Giữ fixture gốc; ghi Finding với expected/actual thực tế và bước tái hiện |
+
+Ghi candidate (SHA, Git status), evidence (run ID, môi trường, lệnh/exit) và giới hạn theo từng gate. Chưa kiểm trên runtime thật hoặc còn diff chưa commit thì ghi Not Run, không kết luận Passed.

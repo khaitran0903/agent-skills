@@ -1,6 +1,6 @@
 ---
 name: qa-test-design
-description: Thiết kế test plan, dataset và expected độc lập từ yêu cầu, contract và rủi ro; dùng trước hoặc trong phát triển, giữ tách biệt thiết kế test với kết quả thực chạy.
+description: Thiết kế hoặc cập nhật test plan, dataset và expected độc lập từ yêu cầu, contract và rủi ro; dùng trước hoặc trong phát triển, giữ tách biệt thiết kế test với kết quả thực chạy.
 ---
 
 # Thiết kế kiểm thử
@@ -22,6 +22,8 @@ description: Thiết kế test plan, dataset và expected độc lập từ yêu
 Mỗi ca có ID, nguồn/rủi ro, lớp kiểm, tiền điều kiện, actor/scope, dữ liệu, bước, expected quan sát được, cleanup và evidence cần thu. Với UI dùng tiêu chí thiết kế đã chọn; nếu áp CRAFT thì ghi mã tương ứng, không coi regex hay screenshot là phép kiểm mọi hành vi.
 
 Dữ liệu hư cấu/ẩn danh giữ đặc điểm cần kiểm; đồng hồ/ngày kiểm soát được. Expected tính tay hoặc bằng công cụ độc lập, không gọi lại hàm đang kiểm. Không đổi expected để hợp thức hóa lỗi.
+
+Khi lập/cập nhật plan cần bàn giao cho thực kiểm, đọc [inventory acceptance](references/acceptance-inventory.md). Giữ danh sách check và oracle có nguồn bên ngoài report kết quả; đã có plan vẫn cần QA khi contract/coverage đổi. Không tự thêm một vòng QC hoặc yêu cầu thêm skill chỉ để hoàn thành thiết kế test.
 
 Khi cần so kết quả giữa query/API, UI, báo cáo hoặc file xuất, đọc [quy trình đối soát](references/result-reconciliation.md). Định nghĩa và quy tắc tính lấy từ dự án; reference chỉ hướng dẫn chuẩn bị căn cứ và kiểm kết quả.
 

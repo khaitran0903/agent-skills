@@ -60,3 +60,21 @@ Các tài liệu bổ sung chỉ dùng để chọn phương pháp; không sao c
 | [docs/development/branching.md](https://github.com/khaitt-huit/ITS/blob/18391ce2c01065abc44d5049a434c616778c939c/docs/development/branching.md) | `90658690f975291f3c22a541d00d1903b5d44b7f2224c4ca41c8654839077d16` |
 
 Không nhập evaluator/tests governance hoặc báo cáo Git của task thật. References mới mô tả quy trình trung tính, không nhận kết quả thực nghiệm của ITS làm evidence cho package chung. Quyền và attribution tiếp tục theo [notices](../THIRD_PARTY_NOTICES.md).
+
+## Pilot evidence — 0.4.0
+
+Theo yêu cầu chủ dự án ngày 21/11/2026, biên tập từ các quy tắc candidate,
+inventory và runner negative control hiện có trong package QA/QC; helper và tests
+được viết mới cho kho chung bằng thư viện chuẩn Python. Không sao chép launcher,
+evaluator/KPI hoặc dữ liệu/runner nghiệp vụ từ ITS/PBC/UND.
+
+| Package | Phần bổ sung | Ranh giới |
+| --- | --- | --- |
+| qa-test-design 1.2.0 | [Acceptance inventory](../skills/qa-test-design/references/acceptance-inventory.md): version/check ID ngoài report và cập nhật plan | Oracle, acceptance và ngoại lệ do dự án quyết định |
+| qc-independent-verification 1.3.0 | [Evidence contract/helper](../skills/qc-independent-verification/references/evidence-contract.md): đối chiếu report với acceptance/context/runner và file/hash | Kiểm nhất quán không chứng minh tính đúng đắn hoặc quyền duyệt; không ép commit dirty tree |
+
+Ý tưởng thiết kế môi trường kiểm chứng được đối chiếu với [bài nói Lauren Tan do
+AI Engineer công bố](https://www.ai.engineer/code/2026/talks/lauren-tan).
+Không nhập slide/transcript hoặc coi số PR/revert được báo cáo là kết quả của kho.
+Giữ nguyên snapshot và attribution trước đó. [Pilot](evidence-pilot.md) phân biệt
+kiểm helper với kết quả sử dụng thực tế tại dự án.

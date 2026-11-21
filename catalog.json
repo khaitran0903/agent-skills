@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "https://github.com/khaitran0903/agent-skills.git",
-  "release": "0.3.0",
+  "release": "0.4.0",
   "skills": [
     {
       "name": "requirements-analysis",
@@ -60,7 +60,7 @@
     },
     {
       "name": "qa-test-design",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "category": "workflow",
       "path": "skills/qa-test-design",
       "source_skills": [
@@ -69,11 +69,11 @@
         "sources/its/.agents/skills/its-survey-data-reporting/SKILL.md",
         "sources/its/.agents/skills/its-survey-data-reporting/references/metric-specification.md"
       ],
-      "adaptation": "Add result reconciliation workflow using a project-defined contract, controlled inputs and independent expected results; exclude survey formulas, denominator choices, missing-data rules and domain fixtures."
+      "adaptation": "Keep result reconciliation and add a versioned acceptance inventory outside execution reports; clarify updating an existing test plan. Exclude domain fixtures, formulas and project acceptance authority. Evidence pilot provenance is recorded in docs/source-map.md."
     },
     {
       "name": "qc-independent-verification",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "category": "workflow",
       "path": "skills/qc-independent-verification",
       "source_skills": [
@@ -81,7 +81,7 @@
         "sources/pbc/.agents/skills/pbc-qc-independent-verification/SKILL.md",
         "sources/und/.agents/skills/und-qa-qc/references/execution-evidence.md"
       ],
-      "adaptation": "Keep runner negative control and add acceptance inventory, scoped evidence reuse and hash limitations; do not import scoring ledgers, KPI thresholds, reviewer authority or role-specific gates. Additional source provenance is recorded in docs/source-map.md."
+      "adaptation": "Add a self-contained evidence consistency helper and contract for externally supplied acceptance/context and runner observations. Keep report validity separate from acceptance, allow identified dirty snapshots and preserve limits of hashes/reuse. Do not import KPI, project runner commands or approval authority. Evidence pilot provenance is recorded in docs/source-map.md."
     },
     {
       "name": "application-security",

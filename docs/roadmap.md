@@ -2,6 +2,7 @@
 
 ## Nên làm sớm
 
+- Hoàn thành pilot tiếp nhận [evidence contract/helper QA/QC](evidence-pilot.md) tại task có scope: bản `0.4.0` đã có helper và ca kiểm lỗi trong repo, chưa chứng minh hiệu quả tại ITS/PBC/UND. Lấy acceptance/context/observation từ nguồn được dự án quản lý; đo báo Passed thiếu căn cứ, công sức review/làm lại và xung đột tùy chỉnh trước mở rộng.
 - Pilot tại một task ITS và một task PBC: chọn planning/UI/QA, so thời gian nhận nâng cấp và số lỗi do tùy chỉnh. Chỉ mở rộng khi có bằng chứng dùng tốt.
 - Chốt license phần tự viết và quyền phân phối tài liệu gốc. Giữ attribution riêng cho nguồn bên thứ ba; không gán một license tùy ý cho toàn bộ snapshot.
 - Phát hành tag và release note sau review; dự án pin commit/tag. Có thể dùng PR nhắc cập nhật, để dự án kiểm và tiếp nhận.
@@ -9,7 +10,7 @@
 
 ## Sau khi có dữ liệu sử dụng
 
-- Bộ tình huống đánh giá hành vi: chọn đúng skill, chỉ đọc reference cần thiết, giữ phạm vi, không tự chọn CLI hay làm sai oracle. Ghi candidate/model/công cụ và giới hạn; không chỉ chấm câu trả lời chứa từ khóa.
+- Mở rộng tình huống đánh giá hành vi từ pilot QA/QC: chọn đúng skill, chỉ đọc reference cần thiết, giữ phạm vi, không tự chọn CLI hay làm sai oracle. Ghi candidate/model/công cụ và giới hạn; không chỉ chấm câu trả lời chứa từ khóa hoặc ép mỗi task chỉ dùng một skill.
 - Chỉ tách thêm skill khi có trigger/đầu ra chung độc lập và lợi ích so với bổ sung skill hiện có. Nghiệp vụ chuyên ngành tiếp tục ở dự án, không nằm trong lộ trình kho chung. `0.3.0` giữ phương pháp đối soát trong QA và bổ sung quy trình phân tích yêu cầu riêng.
 - Đóng gói điều phối nhiều CLI thành bộ riêng gồm schema/launcher/preflight đã kiểm chứng, không chỉ chép router `SKILL.md`.
 - Công cụ xem diff ba chiều và báo dự án nào đang dùng commit cũ. Mọi cập nhật vẫn qua review, giữ phần riêng và không gửi source lên dịch vụ ngoài mặc định.

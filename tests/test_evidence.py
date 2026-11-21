@@ -226,6 +226,16 @@ sys.exit(0 if sys.argv[2] == 'swallow' or failed == 0 else 3)
         code, result = self.invoke()
         self.assertEqual(code, 2, result)
 
+    def test_misspelled_acceptance_rule_is_rejected_instead_of_ignored(self):
+        rule = self.contract['checks'][0]
+        rule['minimum_test'] = rule.pop('minimum_tests')
+        counts = {'total': 0, 'passed': 0, 'failed': 0, 'skipped': 0}
+        self.report['checks'][0]['execution']['tests'] = counts
+        self.observations['checks'][0]['execution']['tests'] = counts
+        code, result = self.invoke()
+        self.assertEqual(code, 2, result)
+        self.assertIn('unknown acceptance field', result['errors'][0])
+
     def test_artifact_traversal_is_rejected_without_reading_outside_root(self):
         for path in ('../outside.log', '/absolute.log', 'C:/outside.log', 'folder\\outside.log'):
             with self.subTest(path=path):

@@ -130,10 +130,14 @@ def artifact_problems(items, root, label):
 def evaluate(contract, context, report, artifact_root, observations=None):
     """Raise for malformed input; return unmet acceptance for well-formed reports."""
     document(contract, 'contract')
+    require(set(contract) <= {'schema_version', 'contract_id', 'checks'},
+            'contract: unknown acceptance field')
     text(contract.get('contract_id'), 'contract.contract_id')
     required = indexed(contract.get('checks'), 'contract.checks')
     require(bool(required), 'contract.checks: acceptance must not be empty')
     for check_id, check in required.items():
+        require(set(check) <= {'id', 'expected', 'kinds', 'execution', 'minimum_tests'},
+                f'{check_id}: unknown acceptance field')
         text(check.get('expected'), f'{check_id}.expected')
         strings(check.get('kinds'), f'{check_id}.kinds')
         require(check.get('execution') in ('command', 'manual'), f'{check_id}: invalid execution mode')
@@ -210,7 +214,9 @@ def evaluate(contract, context, report, artifact_root, observations=None):
             unmet.append(f'{check_id}: evidence kind differs from runner observation')
         if (claimed != {key: value for key, value in run.items() if key != 'outcome'}):
             unmet.append(f'{check_id}: claimed execution differs from runner observation')
-        if sorted(check['artifacts'], key=lambda item: item['path']) != sorted(actual['artifacts'], key=lambda item: item['path']):
+        claimed_artifacts = sorted(check['artifacts'], key=lambda item: item['path'])
+        observed_artifacts = sorted(actual['artifacts'], key=lambda item: item['path'])
+        if claimed_artifacts != observed_artifacts:
             unmet.append(f'{check_id}: claimed artifacts differ from runner observation')
         unmet.extend(artifact_problems(actual['artifacts'], root, f'runner.{check_id}'))
         if run['outcome'] != 'completed' or run['exit_code'] != 0:

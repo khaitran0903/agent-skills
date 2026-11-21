@@ -21,6 +21,7 @@ skill dùng chung và cài độc lập. Bản `0.4.0` bổ sung phương tiện
 | Run hiện tại, đủ acceptance, artifact đúng | report_valid và acceptance_met cùng true |
 | Report trung thực chứa Failed/Not Run | report_valid true, acceptance_met false, exit 1 |
 | Report bỏ check bắt buộc | Inventory ngoài report phát hiện thiếu |
+| Viết sai tên field acceptance | Từ chối input, không âm thầm bỏ ràng buộc |
 | Report khai Passed nhưng process fail | Observation thật chặn; không tin exit do report tự ghi |
 | Assertion đầu fail, assertion sau pass, wrapper trả 0 | Inventory failure vẫn chặn |
 | Zero tests hoặc toàn skipped | Không đáp ứng minimum_tests của acceptance |
@@ -57,6 +58,21 @@ và evidence. Tự kiểm và QC độc lập được ghi đúng theo quyền/t
 Không tự tạo thêm agent, đổi CLI/model, merge hoặc deploy từ một file hướng dẫn.
 
 ## Trạng thái và giới hạn
+
+Kiểm local ngày 21/11/2026 trên Windows, Python 3.12.10: validator đạt cho 12
+package/60 file nguồn; 46 unittest đạt sau khi thêm ca lỗi tên field acceptance.
+Candidate helper tại commit `2c03a0a`
+đã được cài qua sync vào consumer cô lập. Bốn lượt thử lưu log riêng cho fault
+injection, report khai Passed sai, wrapper nuốt exit và lượt bỏ injection; exit
+checker lần lượt là `1, 1, 1, 0`, đúng kết quả cần quan sát. Đây là lượt thử
+pipeline tổng hợp, không phải kết quả CI remote hoặc kiểm app dự án.
+
+Lượt dùng thử độc lập QA/QC trên package sao chép từ consumer đã kiểm ba bộ
+evidence: một bộ khớp, một thiếu acceptance và một sai run ID; helper trả `0, 1, 1`.
+QA bàn giao tám ca sản phẩm mới và giữ toàn bộ Not Run vì không có implementation
+được giao. Reviewer chỉ tiếp nhận consistency synthetic, không nhận là app đã đạt.
+Lượt này dùng helper trước bổ sung guard từ chối field acceptance lạ; guard được
+kiểm bằng ca hồi quy riêng và toàn bộ suite. Không suy đây là đánh giá đủ mọi task.
 
 Helper chỉ kiểm cấu trúc và sự nhất quán của các đầu vào được cung cấp. Nó không
 phân tích nội dung video/log để chứng minh claim, không xác thực oracle, không

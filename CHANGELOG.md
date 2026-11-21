@@ -5,7 +5,7 @@
 - Nâng `qc-independent-verification` lên `1.3.0`: thêm evidence contract và helper Python đi cùng package; đối chiếu report với acceptance/context ngoài report, observation của runner và artifact/hash. Tách report hợp lệ khỏi acceptance đạt; không chạy command trong report hoặc tự cấp quyền phát hành.
 - Nâng `qa-test-design` lên `1.2.0`: giữ inventory acceptance có version bên ngoài report, oracle độc lập và cập nhật plan khi contract đổi. Ca chưa chạy giữ Not Run.
 - Sửa tình huống QC mới trên upstream: dirty candidate có snapshot/diff định danh vẫn kiểm được; không buộc commit/revert thay đổi có sẵn hoặc nhận static/mock là runtime.
-- Thêm kiểm thử subprocess/negative controls cho helper, chạy từ bản package sao chép độc lập. Kiểm thiếu check, zero/skipped tests, report cũ, sai candidate, timeout, exit bị nuốt và artifact bị thay đổi.
+- Thêm kiểm thử subprocess/negative controls cho helper, chạy từ bản package sao chép độc lập. Kiểm thiếu check, zero/skipped tests, report cũ, sai candidate, timeout, exit bị nuốt và artifact bị thay đổi; từ chối field acceptance lạ thay vì âm thầm bỏ ràng buộc bị viết sai tên.
 - Giữ định dạng lock, lệnh sync và 60 file snapshot nguồn; không áp luật tên tiêu đề hoặc field frontmatter mới. Ghi giới hạn pilot và việc tích hợp/thử hành vi tại dự án còn cần làm.
 - Sửa ví dụ output sync trong README cho khớp công cụ và đóng code fence đúng.
 

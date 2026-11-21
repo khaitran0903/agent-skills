@@ -78,6 +78,8 @@ static/mock/unit/integration/browser/runtime/formal phù hợp. Không tự nân
 `execution` chọn `command` hoặc `manual`. Chỉ check chạy test mới cần
 `minimum_tests`; giá trị này là số **passed thực chạy** tối thiểu, không tính skipped.
 Số lượng không thay inventory acceptance/check ID hoặc kiểm đúng case/selector.
+Contract v1 từ chối field ngoài danh sách được mô tả, tránh lỗi viết sai tên
+như `minimum_test` bị bỏ qua và vô tình làm yếu acceptance.
 Command build/lint không bắt buộc có test count. Kết quả manual cần `steps`
 là danh sách bước đã quan sát; helper không xác thực ngữ nghĩa của các bước đó.
 
